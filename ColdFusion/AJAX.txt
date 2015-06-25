@@ -1,0 +1,9 @@
+http://www.andyscott.id.au/blog/using-ajax-in-coldfusion-is-simpler-than-most-people-think
+
+http://www.giancarlogomez.com/2012/06/coldfusion-10-and-ajax-http-post.html
+
+http://blog.tcs.de/coldfusion-query-to-javascript-object/
+
+http://jacktraynor.blogspot.com/2012/02/jquery-autocomplete-using-coldfusion.html
+
+http://stackoverflow.com/questions/18886294/fullcalendar-js-not-firing-consistently-over-js-ajax-coldfusion

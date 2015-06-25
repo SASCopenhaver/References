@@ -1,0 +1,65 @@
+SELECT /*+ ORDERED   */ COUNT (DISTINCT almn_id), 9963
+     FROM ALUMNI.almn a,
+          ALUMNI.pgm p,
+          ALUMNI.pgm_type pt,
+          ALUMNI.field_stdy fs,
+          ALUMNI.usr u,
+          ALUMNI.cntry c
+    WHERE     a.almn_id = p.pgm_almn_id
+          AND p.pgm_type_cd = pt.pgm_type_cd
+          AND p.pgm_from_cntry_cd = c.cntry_cntry_cd
+          AND p.pgm_field_stdy_cd = fs.field_stdy_cd(+)
+          AND a.almn_updt_id = TO_CHAR (u.usr_cd(+))
+          AND p.show_pgm_ind = 'Y'
+          AND a.show_almn_ind = 'Y'
+          AND a.almn_frst_nm LIKE ('JIAN%')
+          AND (   a.almn_last_nm LIKE ('WANG%')
+               OR a.almn_last_nm2 LIKE ('WANG%'))
+
+ 
+--================================
+Pain points have been isolated to two areas in the Alumni Archive application performance can be helped with database optimization:
+
+1) Custom Search
+a. We witnessed…
+i. Faux Caching - The application is storing search result counts and search results into physical tables for each user due to:
+1. ColdFusion Framework:
+a. not leveraging Oracle Database caching features
+b. retrieving results multiple times during a session due to the interfaces configuration (i.e.  showing only X numbers of people to the user at a time)
+ii. High Volumes of search result records due to:
+1. Users running searches that return large populations of people
+iii. Persisted Search Results – search results that are left in the physical tables  due to:
+1. User not logging out gracefully
+2. Users not logging in for long periods after not logging out gracefully
+iv. Greater lags in custom search when more users were searching due to Faux Caching (See Section 1.a.i) 
+b. We recommend…
+i. Change the physical tables to global temporary tables that operate at the Oracle session/application connection level
+ii. OR truncate the physical tables on a regular (weekly, bi-weekly) basis coinciding with routine maintenance windows
+iii. OR delete stale records from the physical tables on a regular basis (after X number of hours or days)
+iv. OR upgrading to Oracle 11g on 64-bit windows
+2) Random Report
+a. We witnessed…
+i. Faux Caching - The application is storing report result counts and report results into physical tables for each user due to:
+1. ColdFusion Framework:
+a. not leveraging Oracle Database caching features
+b. retrieving results multiple times during a session due to the interfaces configuration (i.e.  showing only X numbers of records to the user at a time)
+ii. High Volumes of Report Records per user, due to:
+1. Users running reports that return large numbers of records
+2. Users running multiple reports and multiple large reports during an application session
+iii. Persisted Report Results – report results that are left in the physical tables  due to:
+1. User not logging out gracefully
+2. Users not logging in for long periods after not logging out gracefully
+iv. Inefficient PL/SQL Functions – poorly written PL/SQL functions due to:
+1. ColdFusion Framework:
+a. Algorithms used to generate the code are based on antiqued or erroneous methodologies for coding PL/SQL.
+b. We recommend…
+i. Rewrite the PL/SQL contained in the functions to introduce efficiency (parameter validation, fast exit conditions, leverage table indexes)
+ii. Change the physical tables to global temporary tables that operate at the Oracle session/Application connection level
+iii. OR truncate the physical tables on a regular (weekly, bi-weekly) basis coinciding with routine maintenance windows
+iv. OR delete stale records from the physical tables on a regular basis (after X number of hours or days)
+v. OR upgrading to Oracle 11gon 64-bit windows
+
+Please keep in mind these recommendation are high level and  intended to be minimal changes and some will need to be tested to assure that they will in work with the ColdFusion Framework.  Other optimization options such as: allowing Oracle to manage the data retrieval and users;  or shifting the processing from ColdFusion to the Oracle database entirely require more time, resources and money to be included in the scope of this analysis effort.  There are still other recommendation which are more technical architectural in nature which would ultimately be included in any action we take in the production environment (ie working with indexes, tablespaces, data blocks, etc)
+
+ 
+

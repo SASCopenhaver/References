@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<tocdata>
+<item name="Help Home Page" url="help_home_page.htm" />
+<item name="Using the Alumni Archive Website" url="Alumni_Archive_website/using_the_alumni_archive_website.htm" />
+<book name="Log In &amp; Registration" >
+  <item name="Registration" url="Log_In_&amp;_Registration/Registration.htm" />
+  <item name="New User Registration, form page" url="Log_In_&amp;_Registration/New_User_Registration_Form.htm" />
+  <item name="New User Registration, confirmation page" url="Log_In_&amp;_Registration/New_User_Registration_Confirmation.htm" />
+  <item name="Logging In and Out" url="Log_In_&amp;_Registration/Logging_In_and_Out.htm" />
+  <item name="Forgot Password" url="Log_In_&amp;_Registration/Forgot_password.htm" />
+  <item name="Alumni Archive Home Page" url="Log_In_&amp;_Registration/Home_Page.htm" />
+  <item name="Updating Your Registration Data" url="Log_In_&amp;_Registration/Updating_Your_Registration_Data.htm" />
+</book>
+<book name="Update Alumni Data" >
+  <item name="Updating Alumni Data" url="Update_Alumni_Info/Updating_Alumni_Data.htm" />
+  <item name="Update Alumni Data page" url="Update_Alumni_Info/Update_Alumni_Info.htm" />
+  <item name="Search Results page" url="Update_Alumni_Info/Search_Results_.htm" />
+  <item name="Alumni Profile page" url="Update_Alumni_Info/Alumni_Profile.htm" />
+</book>
+<book name="Navigation &amp; Accessibility" >
+  <item name="Navigation Bar" url="Navigation_&amp;_Accessibility/Global_Navigation_bar.htm" />
+  <item name="Accessibility" url="Navigation_&amp;_Accessibility/accessibility.htm" />
+</book>
+<book name="Reports, Lists, &amp; Labels" >
+  <item name="Create and Print page" url="Reports/Create_and_Print.htm" />
+  <item name="Create Mailing Labels" url="Reports/Create_Mailing_Labels.htm" />
+  <item name="Create Contact List" url="Reports/Create_Contact_List.htm" />
+  <item name="Create Statistical Reports - Page Help" url="Page_Help/Create_Statistical_Reports_Page_Help.htm" />
+</book>
+<book name="Administration" >
+  <item name="Updating Your Registration Data" url="Log_In_&amp;_Registration/Updating_Your_Registration_Data.htm" />
+  <item name="Self Data" url="Administration/Self_Data.htm" />
+  <item name="Administration" url="Administration/Administration.htm" />
+  <item name="Administration for PAOs and Office Directors" url="Administration/Administration_for_PAOs_and_Office_Directors.htm" />
+  <item name="Verify and Change Users" url="Administration/Verify_and_Change_Users.htm" />
+  <item name="Approve Access" url="Administration/Approve_Access.htm" />
+  <item name="Approve Changes" url="Administration/Approve_Changes.htm" />
+  <item name="See Your Active Users" url="Administration/See_Your_Active_Users.htm" />
+  <item name="User Profile Page" url="Administration/user_profile_page.htm" />
+</book>
+
+</tocdata>

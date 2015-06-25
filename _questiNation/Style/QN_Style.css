@@ -1,0 +1,88 @@
+/*
+Background: #FAF0CF
+Brown:      #A52A2A
+Teal:       #006666
+*/
+BODY {
+	background-color : #FAF0CF;
+}
+.Teal10 {
+	font-Family     :      Arial;
+	font-Style      :      normal;
+	font-Weight     :      normal;
+	font-size       :      10pt;
+	/*text-Align      :      left;*/
+	vertical-align  :      top;
+	color			:	   #006666;	
+}
+.Teal9 {
+	font-Family     :      Arial;
+	font-Style      :      normal;
+	font-Weight     :      normal;
+	font-size       :      9pt;
+	/*text-Align      :      left;*/
+	vertical-align  :      top;
+	color			:	   #006666;	
+}
+.Teal8 {
+	font-Family     :      Arial;
+	font-Style      :      normal;
+	font-Weight     :      normal;
+	font-size       :      8pt;
+	/*text-Align      :      left;*/
+	vertical-align  :      top;
+	color			:	   #006666;	
+}
+.Teal7 {
+	font-Family     :      Arial;
+	font-Style      :      normal;
+	font-Weight     :      normal;
+	font-size       :      7pt;
+	/*text-Align      :      left;*/
+	vertical-align  :      top;
+	color			:	   #006666;	
+}
+.Brown10 {
+	font-Family     :      Arial;
+	font-Style      :      normal;
+	font-Weight     :      normal;
+	font-size       :      10pt;
+	/*text-Align      :      left;*/
+	vertical-align  :      top;
+	color			:	   #A52A2A;	
+}
+.Brown9 {
+	font-Family     :      Arial;
+	font-Style      :      normal;
+	font-Weight     :      normal;
+	font-size       :      9pt;
+	/*text-Align      :      left;*/
+	vertical-align  :      top;
+	color			:	   #A52A2A;	
+}
+.Brown8 {
+	font-Family     :      Arial;
+	font-Style      :      normal;
+	font-Weight     :      normal;
+	font-size       :      8pt;
+	/*text-Align      :      left;*/
+	vertical-align  :      top;
+	color			:	   #A52A2A;	
+}
+.Red9 {
+	font-Family     :      Arial;
+	font-Style      :      normal;
+	font-Weight     :      normal;
+	font-size       :      9pt;
+	/*text-Align      :      left;*/
+	vertical-align  :      top;
+	color			:	   Red;	
+}
+.textModuleName14			{
+	font-Family     :      Arial, Helvetica, sans-serif;
+	font-Style      :      normal;
+	font-size       :      14pt;
+	font-Weight     :      bold;
+	text-Align      :      center;	
+	color			:	   #243044	
+}

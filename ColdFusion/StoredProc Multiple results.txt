@@ -1,0 +1,71 @@
+PROCEDURE sp_test_JSON(argAAPPnum IN NUMBER DEFAULT 4144
+                               ,rc_GraphFOPallocation OUT refc_Base
+                               ,rc_CostCategories     OUT refc_Base
+                               );
+/
+PROCEDURE sp_test_JSON(argAAPPnum IN NUMBER DEFAULT 4144
+                               ,rc_GraphFOPallocation OUT refc_Base
+                               ,rc_CostCategories     OUT refc_Base
+                               )
+IS
+
+BEGIN
+OPEN rc_GraphFOPallocation FOR
+      WITH 
+           pivot_data AS (SELECT aappnum, programyear AS PY, costcatcode, amount
+                            from FOP_DATASET_VIEW
+                           where aappnum = argAAPPnum
+                           order by programyear)
+      SELECT * FROM pivot_data
+      PIVOT
+      (
+          SUM(amount)
+          FOR costcatcode
+          IN ('A' AS A,'B1' AS B1,'B2' AS B2,'B3' AS B3,'B4' AS B4,'C1' AS C1,'C2' AS C2,'D' AS D,'S' AS S)
+      );
+
+OPEN rc_CostCategories FOR
+      SELECT DISTINCT costcatcode, costcatdesc
+        FROM FOP_DATASET_VIEW 
+       WHERE aappnum = argAAPPnum
+       ORDER BY costcatcode;
+
+END  sp_test_JSON;
+--=====================================================================================
+
+
+
+
+
+CFC File:
+<cfcomponent>
+        <cffunction name="f_testJSON" access="remote" returntype="any" returnformat="plain" output="no" hint="AJAX call for fop_aapp">
+            	<cfargument name="argAAPPnum" type="numeric" required="no">
+                <!---<cfoutput>sas: #arguments.argAAPPnum#</cfoutput><cfabort>--->
+                <cfset var strucTestJSON = StructNew()>
+                
+                <cfstoredproc procedure="JFAS.ALLOTMENT_GRAPH_PKG.sp_test_JSON" returncode="no" >
+                    <cfprocparam cfsqltype="cf_sql_numeric" value="#arguments.argAAPPnum#">
+                    
+                    <cfprocresult name="strucTestJSON.spr_GraphFOPallocation" resultset=1>
+                    <cfprocresult name="strucTestJSON.spr_CostCategories"     resultset=2>
+					<!---<cfprocresult name="spr_CostCategories" resultset=2>--->
+                </cfstoredproc>
+                
+                <cfreturn strucTestJSON /> 
+                <!---<cfreturn SerializeJSON(spr_GraphFOPallocation_JSON)>--->
+        </cffunction>
+</cfcomponent>
+
+
+
+CFM File:
+<cfinvoke component="#application.paths.root#/model/cfc/job_corps_allots" 
+		  method="f_testJSON"
+          returnvariable="spr">
+          <!---returnvariable="spr_GraphFOPallocation">--->
+    <cfinvokeargument name="argAAPPnum" value="5457">
+</cfinvoke>
+spr:<br/>
+<cfdump var="#spr#">
+<cfabort>

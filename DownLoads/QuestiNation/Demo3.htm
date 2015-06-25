@@ -1,0 +1,168 @@
+<html><head>
+<link rel="stylesheet" href="/stylesheets/30_font_styles.css" type="text/css">
+<link rel="stylesheet" href="/stylesheets/button_format_styles.css" type="text/css">
+</head>
+<body bgcolor="white" topmargin="0" leftmargin="20">
+
+<table border="0" cellspacing="0" cellpadding="0" width="100%"  bgcolor="white">
+<tr><td valign="top"><h1><strong>
+This is a simple test of layers.</strong></h1>
+</td></tr><tr><td valign="top">
+
+
+  
+<script language="Javascript">
+
+  var currentAreaType = '';
+
+  function toggleInnerHTML( areaType ) {
+
+    if (areaType != currentAreaType) {
+      if ( areaType == 'default') {
+        document.all['title'].style.display = "inline";
+        document.all['cp_title'].style.display = "none";
+        document.all['dt_title'].style.display = "none";
+        document.all['details'].style.display = "inline";
+        document.all['cp_details'].style.display = "none";
+		document.all['dt_details'].style.display = "none";
+      };
+      if ( areaType == 'cp') {
+        document.all['title'].style.display = "none";
+        document.all['cp_title'].style.display = "inline";
+		document.all['dt_title'].style.display = "none";
+        document.all['details'].style.display = "none";
+        document.all['cp_details'].style.display = "inline";
+		document.all['dt_details'].style.display = "none";
+      };
+      if ( areaType == 'dt') {
+        document.all['title'].style.display = "none";
+        document.all['cp_title'].style.display = "none";
+		document.all['dt_title'].style.display = "inline";
+        document.all['details'].style.display = "none";
+        document.all['cp_details'].style.display = "none";
+		document.all['dt_details'].style.display = "inline";
+      };
+      currentAreaType = areaType;
+    };
+    
+  }
+
+  function resetForm() {
+	document.all['title'].style.display = "inline";
+    document.all['cp_title'].style.display = "none";
+	document.all['dt_title'].style.display = "none";
+    document.all['details'].style.display = "inline";
+    document.all['cp_details'].style.display = "none";
+	document.all['dt_details'].style.display = "none";
+    currentAreaType = 'default';
+  }
+
+  </script>
+
+  
+  
+  
+<table width="100%" border="0" cellspacing="0" cellpadding="0"><td valign="top">
+
+
+
+<form method="post" action="Demo3.htm"  name="myName"> 
+<table width="100%" border="0"  cellspacing="1" cellpadding="1" height="200">
+	<tr align="left" valign="top">
+		<td width="20"rowspan="3">
+			&nbsp;
+		</td>
+		<td colspan="2">
+			<span id="title" ><h2>This is a title for Sergey</h2></span>
+			<span id="cp_title" style='display=none;'><h2>The second title is for Alla</h2></span>
+			<span id="dt_title" style='display=none;'><h2>The third title is for Little Leya</h2></span>
+		</td>
+	</tr>
+	<tr align="left" valign="top">
+		<td width="175" height="15" valign="top">
+			1) Select first item: 
+		</td>
+		<td width="*" rowspan="2" valign="top">
+		
+			<!--- 1. layer ---------------------------------------------------------------->
+			<span id="details" >
+			<table width="100%" border="1" cellspacing="1" cellpadding="1">
+				<tr>
+					<td valign="top">
+						2) Make the first selection
+					</td>
+					<td valign="top">
+						3) Make the second selection
+					</td>
+				</tr>
+				<tr>
+					<td valign="top">
+						<select name="sel_DRINK" size="5" multiple style="width: 100px;">
+							<option value="1">Coke</option>
+							<option value="2">Diet</option>
+							<option value="3">Bear</option>
+							<option value="4">Vodka</option>
+						</select>
+					</td>
+					<td valign="top">
+						<select name="sel_DISHES" size="5" multiple style="width: 200px;">
+							<option value="11">Cup</option>
+							<option value="22">Glass</option>
+							<option value="33">Plate</option>
+							<option value="44">Mag</option>
+							<option value="55">Buket</option>
+						</select>
+					</td>
+				</tr>
+			</table>
+			</span>
+			<!--- (end)1. layer ----------------------------------------------------------->
+
+			<!--- 2. layer ---------------------------------------------------------------->
+			<span id="cp_details" style='display=none;'>
+			<table width="100%" border="1" cellspacing="1" cellpadding="1" bgcolor="#D9D9FF"><tr><td valign="top">
+			3) This is the third selection</td><td valign="top">
+			4) This is the fouth selection</td></tr><tr><td valign="top">
+			<select name="sel_HELLO" size="5" style="width: 200px;">
+			<option value="1">Hello World 1</option>
+			<option value="2">Hello World 2</option>
+			<option value="3">Hello World 3</option>
+			<option value="4">Hello World 4</option>
+			</select><p></td><td valign="top">
+			<input type="TEXT" name="txt_PLANNER_CODE" size="20" maxlength="64" value=""></td></tr></table>
+			</span>
+			<!--- (end)2. layer ----------------------------------------------------------->
+
+			<!--- 3. layer ---------------------------------------------------------------->
+			<span id="dt_details" style='display=none;'>
+			<table width="100%" border="1" cellspacing="1" cellpadding="1" bgcolor="#ffff00"><tr><td valign="top">
+			5) This is the third selection</td><td valign="top">
+			6) This is the fouth selection</td></tr><tr><td valign="top">
+			<select name="sel_IMAGE" size="5" style="width: 200px;">
+			<option value="1">Image 1</option>
+			<option value="2">Image 2</option>
+			<option value="3">Image 3</option>
+			<option value="4">Image 4</option>
+			</select><p></td><td valign="top">
+			<input type="TEXT" name="txt_PLANNER_CODE" size="20" maxlength="64" value="Can be bo-bo"></td></tr></table>
+			</span>
+			<!--- (end)3. layer ----------------------------------------------------------->
+		</td>
+		<td width="75" rowspan="2" valign="top">
+			<input type="button" name="name" value="«Reset Form»" onClick="javaScript:resetForm()">
+		</td>
+	</tr>
+
+	<tr align="left" valign="top">
+		<td height="185" valign="top" class="copy">
+			<input type="radio" name="rdb_PERMISSION" value="1202" checked onClick="toggleInnerHTML('default');">Make your first step<br>
+			<input type="radio" name="rdb_PERMISSION" value="1203"  onClick="toggleInnerHTML('cp');">The second step<br>
+			<input type="radio" name="rdb_PERMISSION" value="1205" onClick="toggleInnerHTML('dt');">Special Selection
+		</td>
+	</tr>
+</table>
+
+</body>
+</html>
+
+

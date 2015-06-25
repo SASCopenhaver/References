@@ -1,0 +1,932 @@
+App.progressCountTotal = 116;
+App.progressCountCurrent = 0;
+fw.dismissBatchDialogWhenDone = true;
+doc = fw.openDocument('file:///C|/Inetpub/wwwroot/AA/Img/64x64-aquafusion.jpg');
+App.progressCountCurrent = 1;
+App.batchStatusString = '64x64-aquafusion.jpg';
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/images/64x64-aquafusion_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/images/64x64-aquafusion_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/images/64x64-aquafusion_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/64x64-aquafusion_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/64x64-aquafusion_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/64x64-aquafusion_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///C|/Inetpub/wwwroot/AA/Img/6PointStar.jpg');
+App.progressCountCurrent = 2;
+App.batchStatusString = '6PointStar.jpg';
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/images/6PointStar_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/images/6PointStar_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/images/6PointStar_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/6PointStar_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/6PointStar_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/6PointStar_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///C|/Inetpub/wwwroot/AA/Img/9_colors_Animation.gif');
+App.progressCountCurrent = 3;
+App.batchStatusString = '9_colors_Animation.gif';
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/images/9_colors_Animation_gif.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/images/9_colors_Animation_gif.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/images/9_colors_Animation_gif.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/9_colors_Animation_gif.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/9_colors_Animation_gif.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/9_colors_Animation_gif.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///C|/Inetpub/wwwroot/AA/Img/AdministerUSERS_1.jpg');
+App.progressCountCurrent = 4;
+App.batchStatusString = 'AdministerUSERS_1.jpg';
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/images/AdministerUSERS_1_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/images/AdministerUSERS_1_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/images/AdministerUSERS_1_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/AdministerUSERS_1_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/AdministerUSERS_1_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/AdministerUSERS_1_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///C|/Inetpub/wwwroot/AA/Img/Admin_1.jpg');
+App.progressCountCurrent = 5;
+App.batchStatusString = 'Admin_1.jpg';
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/images/Admin_1_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/images/Admin_1_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/images/Admin_1_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/Admin_1_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/Admin_1_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/Admin_1_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///C|/Inetpub/wwwroot/AA/Img/Admin_1_OLD.jpg');
+App.progressCountCurrent = 6;
+App.batchStatusString = 'Admin_1_OLD.jpg';
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/images/Admin_1_OLD_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/images/Admin_1_OLD_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/images/Admin_1_OLD_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/Admin_1_OLD_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/Admin_1_OLD_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/Admin_1_OLD_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///C|/Inetpub/wwwroot/AA/Img/Admin_2.jpg');
+App.progressCountCurrent = 7;
+App.batchStatusString = 'Admin_2.jpg';
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/images/Admin_2_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/images/Admin_2_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/images/Admin_2_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/Admin_2_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/Admin_2_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/Admin_2_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///C|/Inetpub/wwwroot/AA/Img/Admin_2_OLD.jpg');
+App.progressCountCurrent = 8;
+App.batchStatusString = 'Admin_2_OLD.jpg';
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/images/Admin_2_OLD_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/images/Admin_2_OLD_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/images/Admin_2_OLD_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/Admin_2_OLD_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/Admin_2_OLD_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/Admin_2_OLD_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///C|/Inetpub/wwwroot/AA/Img/AdvancedSearch_1.jpg');
+App.progressCountCurrent = 9;
+App.batchStatusString = 'AdvancedSearch_1.jpg';
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/images/AdvancedSearch_1_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/images/AdvancedSearch_1_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/images/AdvancedSearch_1_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/AdvancedSearch_1_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/AdvancedSearch_1_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/AdvancedSearch_1_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///C|/Inetpub/wwwroot/AA/Img/Animation.gif');
+App.progressCountCurrent = 10;
+App.batchStatusString = 'Animation.gif';
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/images/Animation_gif.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/images/Animation_gif.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/images/Animation_gif.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/Animation_gif.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/Animation_gif.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/Animation_gif.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///C|/Inetpub/wwwroot/AA/Img/Attn.jpg');
+App.progressCountCurrent = 11;
+App.batchStatusString = 'Attn.jpg';
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/images/Attn_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/images/Attn_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/images/Attn_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/Attn_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/Attn_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/Attn_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///C|/Inetpub/wwwroot/AA/Img/BasicSearch_1.jpg');
+App.progressCountCurrent = 12;
+App.batchStatusString = 'BasicSearch_1.jpg';
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/images/BasicSearch_1_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/images/BasicSearch_1_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/images/BasicSearch_1_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/BasicSearch_1_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/BasicSearch_1_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/BasicSearch_1_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///C|/Inetpub/wwwroot/AA/Img/bg_grad.jpg');
+App.progressCountCurrent = 13;
+App.batchStatusString = 'bg_grad.jpg';
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/images/bg_grad_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/images/bg_grad_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/images/bg_grad_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/bg_grad_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/bg_grad_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/bg_grad_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///C|/Inetpub/wwwroot/AA/Img/bg_nav.gif');
+App.progressCountCurrent = 14;
+App.batchStatusString = 'bg_nav.gif';
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/images/bg_nav_gif.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/images/bg_nav_gif.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/images/bg_nav_gif.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/bg_nav_gif.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/bg_nav_gif.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/bg_nav_gif.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///C|/Inetpub/wwwroot/AA/Img/cb_Search.psd');
+App.progressCountCurrent = 15;
+App.batchStatusString = 'cb_Search.psd';
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/images/cb_Search_psd.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/images/cb_Search_psd.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/images/cb_Search_psd.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/cb_Search_psd.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/cb_Search_psd.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/cb_Search_psd.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///C|/Inetpub/wwwroot/AA/Img/ChartReport_1.jpg');
+App.progressCountCurrent = 16;
+App.batchStatusString = 'ChartReport_1.jpg';
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/images/ChartReport_1_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/images/ChartReport_1_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/images/ChartReport_1_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/ChartReport_1_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/ChartReport_1_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/ChartReport_1_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///C|/Inetpub/wwwroot/AA/Img/ChartReport_2.jpg');
+App.progressCountCurrent = 17;
+App.batchStatusString = 'ChartReport_2.jpg';
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/images/ChartReport_2_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/images/ChartReport_2_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/images/ChartReport_2_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/ChartReport_2_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/ChartReport_2_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/ChartReport_2_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///C|/Inetpub/wwwroot/AA/Img/ClipArt.jpg');
+App.progressCountCurrent = 18;
+App.batchStatusString = 'ClipArt.jpg';
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/images/ClipArt_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/images/ClipArt_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/images/ClipArt_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/ClipArt_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/ClipArt_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/ClipArt_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///C|/Inetpub/wwwroot/AA/Img/CreateAndPrint_1.jpg');
+App.progressCountCurrent = 19;
+App.batchStatusString = 'CreateAndPrint_1.jpg';
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/images/CreateAndPrint_1_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/images/CreateAndPrint_1_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/images/CreateAndPrint_1_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/CreateAndPrint_1_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/CreateAndPrint_1_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/CreateAndPrint_1_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///C|/Inetpub/wwwroot/AA/Img/CreateAndPrint_2.jpg');
+App.progressCountCurrent = 20;
+App.batchStatusString = 'CreateAndPrint_2.jpg';
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/images/CreateAndPrint_2_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/images/CreateAndPrint_2_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/images/CreateAndPrint_2_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/CreateAndPrint_2_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/CreateAndPrint_2_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/CreateAndPrint_2_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///C|/Inetpub/wwwroot/AA/Img/CreateContactList_1.jpg');
+App.progressCountCurrent = 21;
+App.batchStatusString = 'CreateContactList_1.jpg';
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/images/CreateContactList_1_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/images/CreateContactList_1_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/images/CreateContactList_1_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/CreateContactList_1_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/CreateContactList_1_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/CreateContactList_1_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///C|/Inetpub/wwwroot/AA/Img/CreateCustomReports_1.jpg');
+App.progressCountCurrent = 22;
+App.batchStatusString = 'CreateCustomReports_1.jpg';
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/images/CreateCustomReports_1_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/images/CreateCustomReports_1_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/images/CreateCustomReports_1_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/CreateCustomReports_1_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/CreateCustomReports_1_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/CreateCustomReports_1_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///C|/Inetpub/wwwroot/AA/Img/CreateDistributionList_1.jpg');
+App.progressCountCurrent = 23;
+App.batchStatusString = 'CreateDistributionList_1.jpg';
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/images/CreateDistributionList_1_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/images/CreateDistributionList_1_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/images/CreateDistributionList_1_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/CreateDistributionList_1_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/CreateDistributionList_1_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/CreateDistributionList_1_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///C|/Inetpub/wwwroot/AA/Img/Ctrl_Help_small_icon.gif');
+App.progressCountCurrent = 24;
+App.batchStatusString = 'Ctrl_Help_small_icon.gif';
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/images/Ctrl_Help_small_icon_gif.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/images/Ctrl_Help_small_icon_gif.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/images/Ctrl_Help_small_icon_gif.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/Ctrl_Help_small_icon_gif.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/Ctrl_Help_small_icon_gif.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/Ctrl_Help_small_icon_gif.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///C|/Inetpub/wwwroot/AA/Img/DotBlue.jpg');
+App.progressCountCurrent = 25;
+App.batchStatusString = 'DotBlue.jpg';
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/images/DotBlue_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/images/DotBlue_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/images/DotBlue_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/DotBlue_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/DotBlue_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/DotBlue_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///C|/Inetpub/wwwroot/AA/Img/DotGrn_1.jpg');
+App.progressCountCurrent = 26;
+App.batchStatusString = 'DotGrn_1.jpg';
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/images/DotGrn_1_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/images/DotGrn_1_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/images/DotGrn_1_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/DotGrn_1_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/DotGrn_1_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/DotGrn_1_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///C|/Inetpub/wwwroot/AA/Img/DotGrn_2.jpg');
+App.progressCountCurrent = 27;
+App.batchStatusString = 'DotGrn_2.jpg';
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/images/DotGrn_2_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/images/DotGrn_2_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/images/DotGrn_2_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/DotGrn_2_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/DotGrn_2_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/DotGrn_2_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///C|/Inetpub/wwwroot/AA/Img/DotGrn_3.jpg');
+App.progressCountCurrent = 28;
+App.batchStatusString = 'DotGrn_3.jpg';
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/images/DotGrn_3_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/images/DotGrn_3_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/images/DotGrn_3_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/DotGrn_3_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/DotGrn_3_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/DotGrn_3_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///C|/Inetpub/wwwroot/AA/Img/DotRed_1.jpg');
+App.progressCountCurrent = 29;
+App.batchStatusString = 'DotRed_1.jpg';
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/images/DotRed_1_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/images/DotRed_1_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/images/DotRed_1_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/DotRed_1_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/DotRed_1_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/DotRed_1_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///C|/Inetpub/wwwroot/AA/Img/DotRed_2.jpg');
+App.progressCountCurrent = 30;
+App.batchStatusString = 'DotRed_2.jpg';
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/images/DotRed_2_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/images/DotRed_2_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/images/DotRed_2_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/DotRed_2_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/DotRed_2_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/DotRed_2_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///C|/Inetpub/wwwroot/AA/Img/DotRed_3.jpg');
+App.progressCountCurrent = 31;
+App.batchStatusString = 'DotRed_3.jpg';
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/images/DotRed_3_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/images/DotRed_3_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/images/DotRed_3_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/DotRed_3_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/DotRed_3_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/DotRed_3_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///C|/Inetpub/wwwroot/AA/Img/DotYel_1.jpg');
+App.progressCountCurrent = 32;
+App.batchStatusString = 'DotYel_1.jpg';
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/images/DotYel_1_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/images/DotYel_1_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/images/DotYel_1_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/DotYel_1_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/DotYel_1_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/DotYel_1_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///C|/Inetpub/wwwroot/AA/Img/DotYel_2.jpg');
+App.progressCountCurrent = 33;
+App.batchStatusString = 'DotYel_2.jpg';
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/images/DotYel_2_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/images/DotYel_2_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/images/DotYel_2_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/DotYel_2_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/DotYel_2_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/DotYel_2_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///C|/Inetpub/wwwroot/AA/Img/DotYel_3.jpg');
+App.progressCountCurrent = 34;
+App.batchStatusString = 'DotYel_3.jpg';
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/images/DotYel_3_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/images/DotYel_3_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/images/DotYel_3_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/DotYel_3_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/DotYel_3_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/DotYel_3_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///C|/Inetpub/wwwroot/AA/Img/EditROLE_1.jpg');
+App.progressCountCurrent = 35;
+App.batchStatusString = 'EditROLE_1.jpg';
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/images/EditROLE_1_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/images/EditROLE_1_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/images/EditROLE_1_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/EditROLE_1_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/EditROLE_1_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/EditROLE_1_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///C|/Inetpub/wwwroot/AA/Img/EditText_1.jpg');
+App.progressCountCurrent = 36;
+App.batchStatusString = 'EditText_1.jpg';
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/images/EditText_1_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/images/EditText_1_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/images/EditText_1_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/EditText_1_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/EditText_1_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/EditText_1_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///C|/Inetpub/wwwroot/AA/Img/EditUSER_1.jpg');
+App.progressCountCurrent = 37;
+App.batchStatusString = 'EditUSER_1.jpg';
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/images/EditUSER_1_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/images/EditUSER_1_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/images/EditUSER_1_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/EditUSER_1_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/EditUSER_1_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/EditUSER_1_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///C|/Inetpub/wwwroot/AA/Img/Error.jpg');
+App.progressCountCurrent = 38;
+App.batchStatusString = 'Error.jpg';
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/images/Error_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/images/Error_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/images/Error_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/Error_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/Error_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/Error_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///C|/Inetpub/wwwroot/AA/Img/g1.jpg');
+App.progressCountCurrent = 39;
+App.batchStatusString = 'g1.jpg';
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/images/g1_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/images/g1_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/images/g1_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/g1_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/g1_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/g1_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///C|/Inetpub/wwwroot/AA/Img/g10.jpg');
+App.progressCountCurrent = 40;
+App.batchStatusString = 'g10.jpg';
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/images/g10_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/images/g10_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/images/g10_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/g10_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/g10_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/g10_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///C|/Inetpub/wwwroot/AA/Img/g11.jpg');
+App.progressCountCurrent = 41;
+App.batchStatusString = 'g11.jpg';
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/images/g11_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/images/g11_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/images/g11_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/g11_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/g11_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/g11_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///C|/Inetpub/wwwroot/AA/Img/g12.jpg');
+App.progressCountCurrent = 42;
+App.batchStatusString = 'g12.jpg';
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/images/g12_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/images/g12_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/images/g12_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/g12_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/g12_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/g12_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///C|/Inetpub/wwwroot/AA/Img/g13.jpg');
+App.progressCountCurrent = 43;
+App.batchStatusString = 'g13.jpg';
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/images/g13_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/images/g13_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/images/g13_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/g13_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/g13_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/g13_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///C|/Inetpub/wwwroot/AA/Img/g14.jpg');
+App.progressCountCurrent = 44;
+App.batchStatusString = 'g14.jpg';
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/images/g14_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/images/g14_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/images/g14_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/g14_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/g14_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/g14_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///C|/Inetpub/wwwroot/AA/Img/g15.jpg');
+App.progressCountCurrent = 45;
+App.batchStatusString = 'g15.jpg';
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/images/g15_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/images/g15_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/images/g15_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/g15_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/g15_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/g15_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///C|/Inetpub/wwwroot/AA/Img/g2.jpg');
+App.progressCountCurrent = 46;
+App.batchStatusString = 'g2.jpg';
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/images/g2_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/images/g2_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/images/g2_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/g2_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/g2_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/g2_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///C|/Inetpub/wwwroot/AA/Img/g3.jpg');
+App.progressCountCurrent = 47;
+App.batchStatusString = 'g3.jpg';
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/images/g3_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/images/g3_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/images/g3_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/g3_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/g3_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/g3_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///C|/Inetpub/wwwroot/AA/Img/g4.jpg');
+App.progressCountCurrent = 48;
+App.batchStatusString = 'g4.jpg';
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/images/g4_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/images/g4_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/images/g4_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/g4_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/g4_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/g4_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///C|/Inetpub/wwwroot/AA/Img/g5.jpg');
+App.progressCountCurrent = 49;
+App.batchStatusString = 'g5.jpg';
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/images/g5_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/images/g5_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/images/g5_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/g5_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/g5_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/g5_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///C|/Inetpub/wwwroot/AA/Img/g5_ORG.jpg');
+App.progressCountCurrent = 50;
+App.batchStatusString = 'g5_ORG.jpg';
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/images/g5_ORG_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/images/g5_ORG_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/images/g5_ORG_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/g5_ORG_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/g5_ORG_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/g5_ORG_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///C|/Inetpub/wwwroot/AA/Img/g6.jpg');
+App.progressCountCurrent = 51;
+App.batchStatusString = 'g6.jpg';
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/images/g6_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/images/g6_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/images/g6_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/g6_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/g6_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/g6_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///C|/Inetpub/wwwroot/AA/Img/g7.jpg');
+App.progressCountCurrent = 52;
+App.batchStatusString = 'g7.jpg';
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/images/g7_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/images/g7_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/images/g7_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/g7_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/g7_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/g7_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///C|/Inetpub/wwwroot/AA/Img/g8.jpg');
+App.progressCountCurrent = 53;
+App.batchStatusString = 'g8.jpg';
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/images/g8_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/images/g8_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/images/g8_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/g8_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/g8_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/g8_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///C|/Inetpub/wwwroot/AA/Img/g9.jpg');
+App.progressCountCurrent = 54;
+App.batchStatusString = 'g9.jpg';
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/images/g9_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/images/g9_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/images/g9_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/g9_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/g9_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/g9_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///C|/Inetpub/wwwroot/AA/Img/glblnav_selected.gif');
+App.progressCountCurrent = 55;
+App.batchStatusString = 'glblnav_selected.gif';
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/images/glblnav_selected_gif.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/images/glblnav_selected_gif.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/images/glblnav_selected_gif.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/glblnav_selected_gif.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/glblnav_selected_gif.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/glblnav_selected_gif.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///C|/Inetpub/wwwroot/AA/Img/glblnav_selected.jpg');
+App.progressCountCurrent = 56;
+App.batchStatusString = 'glblnav_selected.jpg';
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/images/glblnav_selected_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/images/glblnav_selected_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/images/glblnav_selected_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/glblnav_selected_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/glblnav_selected_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/glblnav_selected_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///C|/Inetpub/wwwroot/AA/Img/glbnav_background.gif');
+App.progressCountCurrent = 57;
+App.batchStatusString = 'glbnav_background.gif';
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/images/glbnav_background_gif.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/images/glbnav_background_gif.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/images/glbnav_background_gif.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/glbnav_background_gif.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/glbnav_background_gif.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/glbnav_background_gif.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///C|/Inetpub/wwwroot/AA/Img/glbnav_right.gif');
+App.progressCountCurrent = 58;
+App.batchStatusString = 'glbnav_right.gif';
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/images/glbnav_right_gif.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/images/glbnav_right_gif.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/images/glbnav_right_gif.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/glbnav_right_gif.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/glbnav_right_gif.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/glbnav_right_gif.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///C|/Inetpub/wwwroot/AA/Img/Help.jpg');
+App.progressCountCurrent = 59;
+App.batchStatusString = 'Help.jpg';
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/images/Help_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/images/Help_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/images/Help_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/Help_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/Help_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/Help_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///C|/Inetpub/wwwroot/AA/Img/Info.jpg');
+App.progressCountCurrent = 60;
+App.batchStatusString = 'Info.jpg';
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/images/Info_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/images/Info_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/images/Info_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/Info_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/Info_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/Info_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///C|/Inetpub/wwwroot/AA/Img/MailingLables_1.jpg');
+App.progressCountCurrent = 61;
+App.batchStatusString = 'MailingLables_1.jpg';
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/images/MailingLables_1_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/images/MailingLables_1_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/images/MailingLables_1_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/MailingLables_1_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/MailingLables_1_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/MailingLables_1_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///C|/Inetpub/wwwroot/AA/Img/Map.JPG');
+App.progressCountCurrent = 62;
+App.batchStatusString = 'Map.JPG';
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/images/Map_JPG.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/images/Map_JPG.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/images/Map_JPG.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/Map_JPG.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/Map_JPG.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/Map_JPG.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///C|/Inetpub/wwwroot/AA/Img/Map_Small.jpg');
+App.progressCountCurrent = 63;
+App.batchStatusString = 'Map_Small.jpg';
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/images/Map_Small_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/images/Map_Small_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/images/Map_Small_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/Map_Small_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/Map_Small_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/Map_Small_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///C|/Inetpub/wwwroot/AA/Img/Map_Small_ORG.jpg');
+App.progressCountCurrent = 64;
+App.batchStatusString = 'Map_Small_ORG.jpg';
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/images/Map_Small_ORG_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/images/Map_Small_ORG_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/images/Map_Small_ORG_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/Map_Small_ORG_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/Map_Small_ORG_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/Map_Small_ORG_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///C|/Inetpub/wwwroot/AA/Img/People.jpg');
+App.progressCountCurrent = 65;
+App.batchStatusString = 'People.jpg';
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/images/People_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/images/People_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/images/People_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/People_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/People_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/People_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///C|/Inetpub/wwwroot/AA/Img/SavedCustomSearch_1.jpg');
+App.progressCountCurrent = 66;
+App.batchStatusString = 'SavedCustomSearch_1.jpg';
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/images/SavedCustomSearch_1_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/images/SavedCustomSearch_1_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/images/SavedCustomSearch_1_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/SavedCustomSearch_1_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/SavedCustomSearch_1_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/SavedCustomSearch_1_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///C|/Inetpub/wwwroot/AA/Img/seal.jpg');
+App.progressCountCurrent = 67;
+App.batchStatusString = 'seal.jpg';
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/images/seal_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/images/seal_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/images/seal_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/seal_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/seal_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/seal_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///C|/Inetpub/wwwroot/AA/Img/seal_OnBurgundy.jpg');
+App.progressCountCurrent = 68;
+App.batchStatusString = 'seal_OnBurgundy.jpg';
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/images/seal_OnBurgundy_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/images/seal_OnBurgundy_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/images/seal_OnBurgundy_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/seal_OnBurgundy_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/seal_OnBurgundy_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/seal_OnBurgundy_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///C|/Inetpub/wwwroot/AA/Img/Search_1.jpg');
+App.progressCountCurrent = 69;
+App.batchStatusString = 'Search_1.jpg';
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/images/Search_1_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/images/Search_1_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/images/Search_1_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/Search_1_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/Search_1_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/Search_1_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///C|/Inetpub/wwwroot/AA/Img/Search_2.jpg');
+App.progressCountCurrent = 70;
+App.batchStatusString = 'Search_2.jpg';
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/images/Search_2_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/images/Search_2_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/images/Search_2_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/Search_2_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/Search_2_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/Search_2_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///C|/Inetpub/wwwroot/AA/Img/SelfData_1.jpg');
+App.progressCountCurrent = 71;
+App.batchStatusString = 'SelfData_1.jpg';
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/images/SelfData_1_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/images/SelfData_1_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/images/SelfData_1_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/SelfData_1_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/SelfData_1_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/SelfData_1_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///C|/Inetpub/wwwroot/AA/Img/SL_AdministerUSERS_p1.jpg');
+App.progressCountCurrent = 72;
+App.batchStatusString = 'SL_AdministerUSERS_p1.jpg';
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/images/SL_AdministerUSERS_p1_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/images/SL_AdministerUSERS_p1_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/images/SL_AdministerUSERS_p1_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/SL_AdministerUSERS_p1_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/SL_AdministerUSERS_p1_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/SL_AdministerUSERS_p1_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///C|/Inetpub/wwwroot/AA/Img/SL_Admin_p1.jpg');
+App.progressCountCurrent = 73;
+App.batchStatusString = 'SL_Admin_p1.jpg';
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/images/SL_Admin_p1_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/images/SL_Admin_p1_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/images/SL_Admin_p1_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/SL_Admin_p1_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/SL_Admin_p1_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/SL_Admin_p1_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///C|/Inetpub/wwwroot/AA/Img/SL_AdvancedSearch_p1.jpg');
+App.progressCountCurrent = 74;
+App.batchStatusString = 'SL_AdvancedSearch_p1.jpg';
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/images/SL_AdvancedSearch_p1_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/images/SL_AdvancedSearch_p1_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/images/SL_AdvancedSearch_p1_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/SL_AdvancedSearch_p1_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/SL_AdvancedSearch_p1_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/SL_AdvancedSearch_p1_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///C|/Inetpub/wwwroot/AA/Img/SL_AlumniRecord_p1.jpg');
+App.progressCountCurrent = 75;
+App.batchStatusString = 'SL_AlumniRecord_p1.jpg';
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/images/SL_AlumniRecord_p1_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/images/SL_AlumniRecord_p1_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/images/SL_AlumniRecord_p1_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/SL_AlumniRecord_p1_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/SL_AlumniRecord_p1_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/SL_AlumniRecord_p1_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///C|/Inetpub/wwwroot/AA/Img/SL_BasicSearch_p1.jpg');
+App.progressCountCurrent = 76;
+App.batchStatusString = 'SL_BasicSearch_p1.jpg';
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/images/SL_BasicSearch_p1_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/images/SL_BasicSearch_p1_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/images/SL_BasicSearch_p1_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/SL_BasicSearch_p1_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/SL_BasicSearch_p1_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/SL_BasicSearch_p1_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///C|/Inetpub/wwwroot/AA/Img/SL_CreateAndPrint_p1.jpg');
+App.progressCountCurrent = 77;
+App.batchStatusString = 'SL_CreateAndPrint_p1.jpg';
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/images/SL_CreateAndPrint_p1_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/images/SL_CreateAndPrint_p1_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/images/SL_CreateAndPrint_p1_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/SL_CreateAndPrint_p1_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/SL_CreateAndPrint_p1_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/SL_CreateAndPrint_p1_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///C|/Inetpub/wwwroot/AA/Img/SL_CreateContactList_p1.jpg');
+App.progressCountCurrent = 78;
+App.batchStatusString = 'SL_CreateContactList_p1.jpg';
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/images/SL_CreateContactList_p1_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/images/SL_CreateContactList_p1_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/images/SL_CreateContactList_p1_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/SL_CreateContactList_p1_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/SL_CreateContactList_p1_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/SL_CreateContactList_p1_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///C|/Inetpub/wwwroot/AA/Img/SL_CreateStatisticalReports_p1.jpg');
+App.progressCountCurrent = 79;
+App.batchStatusString = 'SL_CreateStatisticalReports_p1.jpg';
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/images/SL_CreateStatisticalReports_p1_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/images/SL_CreateStatisticalReports_p1_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/images/SL_CreateStatisticalReports_p1_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/SL_CreateStatisticalReports_p1_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/SL_CreateStatisticalReports_p1_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/SL_CreateStatisticalReports_p1_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///C|/Inetpub/wwwroot/AA/Img/SL_EditROLE_p1.jpg');
+App.progressCountCurrent = 80;
+App.batchStatusString = 'SL_EditROLE_p1.jpg';
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/images/SL_EditROLE_p1_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/images/SL_EditROLE_p1_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/images/SL_EditROLE_p1_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/SL_EditROLE_p1_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/SL_EditROLE_p1_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/SL_EditROLE_p1_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///C|/Inetpub/wwwroot/AA/Img/SL_EditROLE_p2.jpg');
+App.progressCountCurrent = 81;
+App.batchStatusString = 'SL_EditROLE_p2.jpg';
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/images/SL_EditROLE_p2_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/images/SL_EditROLE_p2_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/images/SL_EditROLE_p2_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/SL_EditROLE_p2_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/SL_EditROLE_p2_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/SL_EditROLE_p2_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///C|/Inetpub/wwwroot/AA/Img/SL_EditText_p1.jpg');
+App.progressCountCurrent = 82;
+App.batchStatusString = 'SL_EditText_p1.jpg';
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/images/SL_EditText_p1_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/images/SL_EditText_p1_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/images/SL_EditText_p1_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/SL_EditText_p1_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/SL_EditText_p1_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/SL_EditText_p1_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///C|/Inetpub/wwwroot/AA/Img/SL_EditText_p2.jpg');
+App.progressCountCurrent = 83;
+App.batchStatusString = 'SL_EditText_p2.jpg';
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/images/SL_EditText_p2_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/images/SL_EditText_p2_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/images/SL_EditText_p2_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/SL_EditText_p2_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/SL_EditText_p2_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/SL_EditText_p2_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///C|/Inetpub/wwwroot/AA/Img/SL_EditText_p3.jpg');
+App.progressCountCurrent = 84;
+App.batchStatusString = 'SL_EditText_p3.jpg';
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/images/SL_EditText_p3_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/images/SL_EditText_p3_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/images/SL_EditText_p3_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/SL_EditText_p3_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/SL_EditText_p3_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/SL_EditText_p3_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///C|/Inetpub/wwwroot/AA/Img/SL_EditUSER_p1.jpg');
+App.progressCountCurrent = 85;
+App.batchStatusString = 'SL_EditUSER_p1.jpg';
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/images/SL_EditUSER_p1_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/images/SL_EditUSER_p1_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/images/SL_EditUSER_p1_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/SL_EditUSER_p1_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/SL_EditUSER_p1_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/SL_EditUSER_p1_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///C|/Inetpub/wwwroot/AA/Img/SL_ForgotPass.jpg');
+App.progressCountCurrent = 86;
+App.batchStatusString = 'SL_ForgotPass.jpg';
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/images/SL_ForgotPass_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/images/SL_ForgotPass_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/images/SL_ForgotPass_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/SL_ForgotPass_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/SL_ForgotPass_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/SL_ForgotPass_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///C|/Inetpub/wwwroot/AA/Img/SL_Home.jpg');
+App.progressCountCurrent = 87;
+App.batchStatusString = 'SL_Home.jpg';
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/images/SL_Home_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/images/SL_Home_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/images/SL_Home_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/SL_Home_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/SL_Home_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/SL_Home_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///C|/Inetpub/wwwroot/AA/Img/SL_Home_ORG.jpg');
+App.progressCountCurrent = 88;
+App.batchStatusString = 'SL_Home_ORG.jpg';
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/images/SL_Home_ORG_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/images/SL_Home_ORG_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/images/SL_Home_ORG_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/SL_Home_ORG_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/SL_Home_ORG_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/SL_Home_ORG_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///C|/Inetpub/wwwroot/AA/Img/SL_ListUsr_Active_p1.jpg');
+App.progressCountCurrent = 89;
+App.batchStatusString = 'SL_ListUsr_Active_p1.jpg';
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/images/SL_ListUsr_Active_p1_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/images/SL_ListUsr_Active_p1_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/images/SL_ListUsr_Active_p1_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/SL_ListUsr_Active_p1_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/SL_ListUsr_Active_p1_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/SL_ListUsr_Active_p1_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///C|/Inetpub/wwwroot/AA/Img/SL_ListUsr_PreReg_p1.jpg');
+App.progressCountCurrent = 90;
+App.batchStatusString = 'SL_ListUsr_PreReg_p1.jpg';
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/images/SL_ListUsr_PreReg_p1_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/images/SL_ListUsr_PreReg_p1_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/images/SL_ListUsr_PreReg_p1_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/SL_ListUsr_PreReg_p1_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/SL_ListUsr_PreReg_p1_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/SL_ListUsr_PreReg_p1_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///C|/Inetpub/wwwroot/AA/Img/SL_ListUsr_ReqAccs_p1.jpg');
+App.progressCountCurrent = 91;
+App.batchStatusString = 'SL_ListUsr_ReqAccs_p1.jpg';
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/images/SL_ListUsr_ReqAccs_p1_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/images/SL_ListUsr_ReqAccs_p1_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/images/SL_ListUsr_ReqAccs_p1_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/SL_ListUsr_ReqAccs_p1_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/SL_ListUsr_ReqAccs_p1_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/SL_ListUsr_ReqAccs_p1_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///C|/Inetpub/wwwroot/AA/Img/SL_ListUsr_ReqChng_p1.jpg');
+App.progressCountCurrent = 92;
+App.batchStatusString = 'SL_ListUsr_ReqChng_p1.jpg';
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/images/SL_ListUsr_ReqChng_p1_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/images/SL_ListUsr_ReqChng_p1_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/images/SL_ListUsr_ReqChng_p1_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/SL_ListUsr_ReqChng_p1_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/SL_ListUsr_ReqChng_p1_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/SL_ListUsr_ReqChng_p1_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///C|/Inetpub/wwwroot/AA/Img/SL_LogIn.jpg');
+App.progressCountCurrent = 93;
+App.batchStatusString = 'SL_LogIn.jpg';
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/images/SL_LogIn_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/images/SL_LogIn_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/images/SL_LogIn_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/SL_LogIn_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/SL_LogIn_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/SL_LogIn_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///C|/Inetpub/wwwroot/AA/Img/SL_MailingLables_p1.jpg');
+App.progressCountCurrent = 94;
+App.batchStatusString = 'SL_MailingLables_p1.jpg';
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/images/SL_MailingLables_p1_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/images/SL_MailingLables_p1_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/images/SL_MailingLables_p1_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/SL_MailingLables_p1_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/SL_MailingLables_p1_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/SL_MailingLables_p1_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///C|/Inetpub/wwwroot/AA/Img/SL_MailingLables_p1X.jpg');
+App.progressCountCurrent = 95;
+App.batchStatusString = 'SL_MailingLables_p1X.jpg';
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/images/SL_MailingLables_p1X_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/images/SL_MailingLables_p1X_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/images/SL_MailingLables_p1X_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/SL_MailingLables_p1X_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/SL_MailingLables_p1X_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/SL_MailingLables_p1X_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///C|/Inetpub/wwwroot/AA/Img/SL_NewUserRegistration_p1.jpg');
+App.progressCountCurrent = 96;
+App.batchStatusString = 'SL_NewUserRegistration_p1.jpg';
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/images/SL_NewUserRegistration_p1_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/images/SL_NewUserRegistration_p1_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/images/SL_NewUserRegistration_p1_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/SL_NewUserRegistration_p1_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/SL_NewUserRegistration_p1_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/SL_NewUserRegistration_p1_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///C|/Inetpub/wwwroot/AA/Img/SL_NewUserRegistration_p2.jpg');
+App.progressCountCurrent = 97;
+App.batchStatusString = 'SL_NewUserRegistration_p2.jpg';
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/images/SL_NewUserRegistration_p2_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/images/SL_NewUserRegistration_p2_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/images/SL_NewUserRegistration_p2_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/SL_NewUserRegistration_p2_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/SL_NewUserRegistration_p2_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/SL_NewUserRegistration_p2_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///C|/Inetpub/wwwroot/AA/Img/SL_NewUserRegistration_p3.jpg');
+App.progressCountCurrent = 98;
+App.batchStatusString = 'SL_NewUserRegistration_p3.jpg';
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/images/SL_NewUserRegistration_p3_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/images/SL_NewUserRegistration_p3_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/images/SL_NewUserRegistration_p3_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/SL_NewUserRegistration_p3_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/SL_NewUserRegistration_p3_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/SL_NewUserRegistration_p3_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///C|/Inetpub/wwwroot/AA/Img/SL_NewUserRegistration_p4.jpg');
+App.progressCountCurrent = 99;
+App.batchStatusString = 'SL_NewUserRegistration_p4.jpg';
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/images/SL_NewUserRegistration_p4_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/images/SL_NewUserRegistration_p4_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/images/SL_NewUserRegistration_p4_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/SL_NewUserRegistration_p4_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/SL_NewUserRegistration_p4_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/SL_NewUserRegistration_p4_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///C|/Inetpub/wwwroot/AA/Img/SL_popupAlumniRecord_p1.jpg');
+App.progressCountCurrent = 100;
+App.batchStatusString = 'SL_popupAlumniRecord_p1.jpg';
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/images/SL_popupAlumniRecord_p1_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/images/SL_popupAlumniRecord_p1_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/images/SL_popupAlumniRecord_p1_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/SL_popupAlumniRecord_p1_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/SL_popupAlumniRecord_p1_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/SL_popupAlumniRecord_p1_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///C|/Inetpub/wwwroot/AA/Img/SL_popupNUR_Fax.jpg');
+App.progressCountCurrent = 101;
+App.batchStatusString = 'SL_popupNUR_Fax.jpg';
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/images/SL_popupNUR_Fax_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/images/SL_popupNUR_Fax_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/images/SL_popupNUR_Fax_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/SL_popupNUR_Fax_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/SL_popupNUR_Fax_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/SL_popupNUR_Fax_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///C|/Inetpub/wwwroot/AA/Img/SL_popupSaveSearchName_p1.jpg');
+App.progressCountCurrent = 102;
+App.batchStatusString = 'SL_popupSaveSearchName_p1.jpg';
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/images/SL_popupSaveSearchName_p1_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/images/SL_popupSaveSearchName_p1_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/images/SL_popupSaveSearchName_p1_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/SL_popupSaveSearchName_p1_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/SL_popupSaveSearchName_p1_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/SL_popupSaveSearchName_p1_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///C|/Inetpub/wwwroot/AA/Img/SL_QuickSearch_p1.jpg');
+App.progressCountCurrent = 103;
+App.batchStatusString = 'SL_QuickSearch_p1.jpg';
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/images/SL_QuickSearch_p1_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/images/SL_QuickSearch_p1_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/images/SL_QuickSearch_p1_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/SL_QuickSearch_p1_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/SL_QuickSearch_p1_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/SL_QuickSearch_p1_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///C|/Inetpub/wwwroot/AA/Img/SL_SavedCustomSearch_p1.jpg');
+App.progressCountCurrent = 104;
+App.batchStatusString = 'SL_SavedCustomSearch_p1.jpg';
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/images/SL_SavedCustomSearch_p1_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/images/SL_SavedCustomSearch_p1_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/images/SL_SavedCustomSearch_p1_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/SL_SavedCustomSearch_p1_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/SL_SavedCustomSearch_p1_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/SL_SavedCustomSearch_p1_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///C|/Inetpub/wwwroot/AA/Img/SL_SavedCustomSearch_p2.jpg');
+App.progressCountCurrent = 105;
+App.batchStatusString = 'SL_SavedCustomSearch_p2.jpg';
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/images/SL_SavedCustomSearch_p2_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/images/SL_SavedCustomSearch_p2_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/images/SL_SavedCustomSearch_p2_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/SL_SavedCustomSearch_p2_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/SL_SavedCustomSearch_p2_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/SL_SavedCustomSearch_p2_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///C|/Inetpub/wwwroot/AA/Img/SL_SearchResults_p1.jpg');
+App.progressCountCurrent = 106;
+App.batchStatusString = 'SL_SearchResults_p1.jpg';
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/images/SL_SearchResults_p1_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/images/SL_SearchResults_p1_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/images/SL_SearchResults_p1_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/SL_SearchResults_p1_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/SL_SearchResults_p1_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/SL_SearchResults_p1_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///C|/Inetpub/wwwroot/AA/Img/SL_SearchUpdate_p1.jpg');
+App.progressCountCurrent = 107;
+App.batchStatusString = 'SL_SearchUpdate_p1.jpg';
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/images/SL_SearchUpdate_p1_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/images/SL_SearchUpdate_p1_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/images/SL_SearchUpdate_p1_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/SL_SearchUpdate_p1_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/SL_SearchUpdate_p1_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/SL_SearchUpdate_p1_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///C|/Inetpub/wwwroot/AA/Img/SL_Search_p1.jpg');
+App.progressCountCurrent = 108;
+App.batchStatusString = 'SL_Search_p1.jpg';
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/images/SL_Search_p1_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/images/SL_Search_p1_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/images/SL_Search_p1_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/SL_Search_p1_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/SL_Search_p1_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/SL_Search_p1_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///C|/Inetpub/wwwroot/AA/Img/SL_SelfData_p1.jpg');
+App.progressCountCurrent = 109;
+App.batchStatusString = 'SL_SelfData_p1.jpg';
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/images/SL_SelfData_p1_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/images/SL_SelfData_p1_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/images/SL_SelfData_p1_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/SL_SelfData_p1_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/SL_SelfData_p1_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/SL_SelfData_p1_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///C|/Inetpub/wwwroot/AA/Img/SL_UserProfile_p1.jpg');
+App.progressCountCurrent = 110;
+App.batchStatusString = 'SL_UserProfile_p1.jpg';
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/images/SL_UserProfile_p1_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/images/SL_UserProfile_p1_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/images/SL_UserProfile_p1_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/SL_UserProfile_p1_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/SL_UserProfile_p1_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/SL_UserProfile_p1_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///C|/Inetpub/wwwroot/AA/Img/Test.jpg');
+App.progressCountCurrent = 111;
+App.batchStatusString = 'Test.jpg';
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/images/Test_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/images/Test_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/images/Test_jpg.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/Test_jpg.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/Test_jpg.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/Test_jpg.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///C|/Inetpub/wwwroot/AA/Img/Test.psd');
+App.progressCountCurrent = 112;
+App.batchStatusString = 'Test.psd';
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/images/Test_psd.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/images/Test_psd.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/images/Test_psd.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/Test_psd.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/Test_psd.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/Test_psd.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///C|/Inetpub/wwwroot/AA/Img/tl_curve_white.gif');
+App.progressCountCurrent = 113;
+App.batchStatusString = 'tl_curve_white.gif';
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/images/tl_curve_white_gif.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/images/tl_curve_white_gif.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/images/tl_curve_white_gif.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/tl_curve_white_gif.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/tl_curve_white_gif.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/tl_curve_white_gif.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///C|/Inetpub/wwwroot/AA/Img/tr_curve_white.gif');
+App.progressCountCurrent = 114;
+App.batchStatusString = 'tr_curve_white.gif';
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/images/tr_curve_white_gif.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/images/tr_curve_white_gif.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/images/tr_curve_white_gif.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/tr_curve_white_gif.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/tr_curve_white_gif.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/tr_curve_white_gif.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///C|/Inetpub/wwwroot/AA/Img/worldmap.gif');
+App.progressCountCurrent = 115;
+App.batchStatusString = 'worldmap.gif';
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/images/worldmap_gif.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/images/worldmap_gif.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/images/worldmap_gif.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/worldmap_gif.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/worldmap_gif.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/worldmap_gif.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+doc = fw.openDocument('file:///C|/Inetpub/wwwroot/AA/Img/worldmap_Small.gif');
+App.progressCountCurrent = 116;
+App.batchStatusString = 'worldmap_Small.gif';
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/images/worldmap_Small_gif.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/images/worldmap_Small_gif.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/images/worldmap_Small_gif.jpg',({applyScale:false, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:"100", useScale:true, xSize:0, ySize:0}));
+if (!Files.exists('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/worldmap_Small_gif.jpg') || confirm('file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/worldmap_Small_gif.jpg already exists. Click OK to replace the file.')) 
+fw.exportDocumentAs(doc, 'file:///C|/Inetpub/wwwroot/AA/Img/thumbnails/worldmap_Small_gif.jpg',({applyScale:true, colorMode:"24 bit", exportFormat:"JPEG", jpegQuality:80, jpegSmoothness:0, jpegSubsampling:0, name:"JPEG - Better Quality", numEntriesRequested:0, percentScale:100, useScale:false, xSize:-100, ySize:-100}));
+fw.closeDocument(doc);
+'done';

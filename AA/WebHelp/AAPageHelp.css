@@ -1,0 +1,114 @@
+<--- Alumni Archive style sheet for Page Help-->
+
+
+Body.page {background-color: #FDFDFF;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 10pt; 
+	color: #000033;
+	margin:8px;}
+	
+Body.page P A:link {text-decoration: underline;}
+
+H1.page {color: #941021; 
+	border-bottom: solid #000066 1px;
+	font-weight:bold; 
+	font-size: 12pt;  
+	font-weight: bold;
+   font-family: 'Arial Rounded MT Bold', Arial, Verdana, sans-serif; 
+   margin: 0px 0px 10px 0px; 
+	padding: 0px; 
+	text-align:left; 
+   white-space:nowrap; 
+	background-color:transparent;}
+
+H2.page {font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color: #0000AA;
+	background-color: #EEEEFF; 
+	font-size: 12pt; 
+	font-weight: bold; 
+	margin: 24px 0px 18px 0px;}
+	
+H3.page {font-family:  Arial, Verdana, Geneva, Helvetica, sans-serif;
+	color: #990000;
+	background-color: #EEEEEE; 
+	font-size: 11pt; 
+	font-weight: bold; 
+	margin: 50px 0px 20px 0px;}
+	
+H4.page {font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color: #006666; 
+	background-color: #EEEEF3;
+	font-size: 10pt; 
+	font-weight: bold;}
+
+LI.page {font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 10pt; color: #000033; margin: 4px 0px 12px 0px;}
+
+P.page {font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 10pt; 
+	color: #000033; 
+	margin: 4px 0px 12px 0px;}
+
+P.note {font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 10pt; 
+	color: #000033; 
+	margin: 4px 0px 12px 0px; 
+	background-color:#FFFFDD; 
+	border: 1px solid #660000; 
+   padding:6px;}
+
+P.return {font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color: #000033; margin: 4px 0px 6px 0px; text-align: center; 
+	font-size: 7pt; clear: right;}
+
+SPAN.emphasis {font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-weight: bold; 
+	font-size: 10pt; 
+	color: #AA0000;}
+
+SPAN.name {font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-weight: bold; 
+	font-size: 10pt;} 
+	
+Span.blue {font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	color: #005AAD;}
+	
+SPAN.blueWhite1 {font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-weight: bold; 
+	background-color: #005AAD;
+	color: #ffffff;
+	padding: 0px 10px 1px 10px;
+	font-size: 9pt;}
+
+SPAN.blueWhite2 {font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-weight: bold; 
+	background-color: #005AAD;
+	color: #ffffff;
+	padding: 0px 4px 1px 4px;
+	font-size: 9pt;}
+	
+Span.greyBlue {font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color: #005AA5;
+	background-color: #CECECE;
+	padding: 0px 3px 0px 3px;
+	font-weight: 700;}
+	
+SPAN.green {font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color: #5E955E; 
+	font-weight: bold;}
+
+SPAN.greenBlue {font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	color: #005AA5;
+	background-color: D6DEC6;
+	padding: 0px 6px 1px 6px;
+	text-decoration: underline;}
+	
+SPAN.red {font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color: #F54952; 
+	font-weight: bold;}
+	
+.h3indent {margin-left: 20px;}
+
+.h4indent {margin-left: 40px;}

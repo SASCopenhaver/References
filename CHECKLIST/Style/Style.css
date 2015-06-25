@@ -1,0 +1,311 @@
+<style type="text/css">
+	body{
+		margin:0;
+		padding:0;
+		/*color:black;
+		background:#FDF8EF;
+	*/
+		height : 20px;
+	}
+
+	table {
+		width	:	100%;
+		margin	:	0;
+	}
+
+	table  td {
+		padding			:	0;
+		border-width	:	1;
+		vertical-align	:	top;
+		/*font-family		:	Arial, Helvetica, sans-serif;*/
+	}
+
+	a:link {
+		font-weight		:	bold;
+		font-family		:	Arial;
+		text-decoration	:	none;/*underline;*/
+		font-size		:	x-small;
+		color			:	#557;/*#0000ff;*/
+	}
+	a:active {
+		text-decoration :	none;
+		font-family 	:	Arial;
+		font-weight		:	bold;
+		text-decoration	:	none;/*underline;*/
+		font-size		:	x-small;
+	}
+	a:visited {
+		color			:	#557;/*#000080;*/
+		text-decoration	:	none;
+		font-weight		:	bold;
+		font-family		:	Arial;
+		text-decoration	:	none;/*underline;*/
+		font-size		:	x-small;
+	}
+	a:hover {
+		text-decoration	:	none;
+		color			:	#FF0000;
+		font-family		:	Arial;
+		font-weight		:	bold;
+		text-decoration	: 	none;/*underline;*/
+		font-size 		: 	x-small;
+	}
+
+	/**************************************************************************/
+	td#navigateBelow a:link {
+		font-weight		:	normal;
+		font-family		:	Verdana;
+		text-decoration	:	underline;
+		font-size		:	xx-small;
+		color			:	#4b0082;
+	}
+	td#navigateBelow a:active {
+		font-weight		:	normal;
+		font-family		:	Verdana;
+		text-decoration	:	underline;
+		font-size		:	xx-small;
+		color			:	Red;
+	}
+	td#navigateBelow a:visited {
+		font-weight:normal;
+		font-family:Verdana;
+		text-decoration:underline;
+		font-size:xx-small;
+		color:#4b0082;
+	}
+	td#navigateBelow a:hover {
+		font-weight		:	normal;
+		font-family		:	Verdana;
+		text-decoration	:	underline;
+		font-size 		: 	xx-small;
+		color			:	Red;
+	}
+	/**************************************************************************/
+	td#navigateTop a:link {
+		font-weight		:	normal;
+		font-family		:	Verdana;
+		text-decoration	:	underline;
+		font-size		:	xx-small;
+		color			:	#4b0082;
+	}
+	td#navigateTop a:active {
+		font-weight		:	normal;
+		font-family		:	Verdana;
+		text-decoration	:	underline;
+		font-size		:	xx-small;
+		color			:	Red;
+	}
+	td#navigateTop a:visited {
+		font-weight:normal;
+		font-family:Verdana;
+		text-decoration:underline;
+		font-size:xx-small;
+		color:#4b0082;
+	}
+	td#navigateTop a:hover {
+		font-weight		:	normal;
+		font-family		:	Verdana;
+		text-decoration	:	underline;
+		font-size 		: 	xx-small;
+		color			:	Red;
+	}
+	/**************************************************************************/
+	
+	#tdAppName{
+		font-size : 180%;
+		font-style : normal;
+		font-weight : bold;
+		color : #333399;
+		width : 760px;
+		text-decoration : none;
+	}
+
+	.trMenu{
+		font-size : 80%;
+		font-style : normal;
+		font-weight : bold;
+		font-family:Arial;
+		color : #990000;/*#FFFF33;*/
+		width : 760px;
+		text-decoration : none;
+		background-color : #F3E8CC;/*#990000;*/
+		/*text-align : right;*/
+	}
+	/*
+	.tdSpacer{
+		height : 11px;
+	}
+	*/
+	.txtInfo{
+		color: #990000;
+		font-family: Arial, Helvetica, sans-serif;
+		font-weight: bolder;
+		font-size: x-small;
+	}
+
+	.txtTableHeader{
+		color: #000080;
+		font-family: Arial, Helvetica, sans-serif;
+		font-weight: bolder;
+		font-size: x-small;
+	}
+	.txtTableCell{
+		color: #990000;
+		font-family: Arial, Helvetica, sans-serif;
+		font-weight: bolder;
+		font-size: x-small;
+	}
+	.txtTableCellNormal{
+		color: #990000;
+		font-family: Arial, Helvetica, sans-serif;
+		font-weight: normal;
+		font-size: x-small;
+	}
+
+	#tdFooter{
+		font-size : 60%;
+		font-family		:	Arial;
+		font-style : normal;
+		font-weight : normal;
+		color : #333399;
+		width : 760px;
+		text-decoration : none;
+	}
+
+	#tdContent{
+		/*font-size : 80%;
+		font-family		:	Arial;
+		font-style : normal;
+		font-weight : normal;
+		color : #333399;*/
+		width : 760px;
+		text-decoration : none;
+	}
+
+	.textBox{
+		border : thin solid Silver;
+		width : 180px;
+	}
+	.errorMsg{
+		font-family		:	Arial;
+		font-style : normal;
+		font-weight : normal;
+		font-size : 80%;
+		color	:	Red;
+	}
+
+	.controlName{
+		font-family : Arial;
+		font-size : xx-small;
+		font-weight : bolder;
+		color : Navy;
+	}
+	.textTitle{
+		font-family : Arial;
+		font-size : larger;
+		color : Navy;
+	}
+	.textQTitle{
+		font-family : Arial;
+		font-size : x-small;
+		font-weight : bolder;
+		color : Navy;
+	}
+	.txtOutputTitle {
+		font-family : Arial, Helvetica, sans-serif;
+		font-size : x-small;
+		font-weight : bolder;
+		color : Navy;
+		width:150px;
+		height : 23px;
+	}
+	.txtOutputTitlePrint {
+		font-family : Arial, Helvetica, sans-serif;
+		font-size : x-small;
+		font-weight : bolder;
+		color : Navy;
+		/*width:150px;*/
+		height : 23px;
+	}
+	.txtOutputData {
+		font-family : Arial, Helvetica, sans-serif;
+		font-size : x-small;
+		font-weight : bolder;
+		color : #a52a2a;
+		width	:	610px;
+		height : 23px;
+	}
+	.txtOutputDataPrint {
+		font-family : Arial, Helvetica, sans-serif;
+		font-size : x-small;
+		font-weight : bolder;
+		color : #a52a2a;
+		/*width	:	610px;*/
+		height : 23px;
+	}
+
+	.textPlain{
+		font-family : Arial;
+		font-size : smaller;
+		color : black;
+	}
+	.illustration1{
+		float:	right;
+		overflow:	auto;
+		margin:	5px;
+	}
+	.textFormTitle{
+		font-family : Arial;
+		font-size : smaller;
+		color : #DCC294;
+		/*background-color : #E0E0F3;*/
+		font-weight : bolder;
+	}
+	.textFormPlain{
+		font-family : Arial;
+		font-size : x-small;
+		color : black;
+	}
+
+	.reqField{
+		font-family : Arial;
+		font-size 	: x-small;
+		font-weight : normal;
+		color 		: #ff0000;
+	}
+	
+	.c_Green_Header{
+		font-family : Arial;
+		font-weight : bold;
+		color		: #076161;
+	}
+	.c_Green_Text{
+		font-family : Arial;
+		font-weight : bold;
+		color		: #076161;
+		font-size 	: x-small;
+	}
+	
+	.c_Yellow_Header{
+		font-family : Arial;
+		font-weight : bold;
+		color		: #DABE00;
+	}
+	.c_Yellow_Text{
+		font-family : Arial;
+		font-weight : bold;
+		color		: #DABE00;
+		font-size 	: x-small;
+	}
+	.c_Red_Header{
+		font-family : Arial;
+		font-weight : bold;
+		color		: #FF010D;
+	}
+	.c_Red_Text{
+		font-family : Arial;
+		font-weight : bold;
+		color		: #FF010D;
+		font-size 	: x-small;
+	}
+</style>

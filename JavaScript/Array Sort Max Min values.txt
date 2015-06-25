@@ -1,0 +1,50 @@
+//=============================================================================================
+// f_SortJsonArray works, but not used in this csript.
+function f_SortJsonArray(arg_Array, arg_Property){
+	var v_arrayToBeSorted = arg_Array;
+	
+	return v_arrayToBeSorted.sort(function(a,b) 
+	{ 
+    	return a[arg_Property] < b[arg_Property];
+    });	
+}
+//=============================================================================================
+function f_getMaxMinJsonValue(arg_Array, arg_Property, arg_MaxOrMin) {
+	// TEST: alert(JSON.stringify(arg_Array))
+	
+	var v_RtnVal  = 0
+	var v_TempVal = 0;
+	//
+	var v_MinVal = 0;
+	var v_MaxVal = 0;
+
+//	for (var v=0; v<arg_Array.length; v++)
+//	{
+//		v_TempVal = JSON.stringify(arg_Array)+"["+v+"]."+arg_Property;
+//		//alert( eval(arg_Array[v].arg_Property) )
+//		
+//		if (arg_MaxOrMin == "MAX"){if (v_TempVal >= v_RtnVal){v_RtnVal = v_TempVal}}
+//		else if (arg_MaxOrMin == "MIN"){ if (v_TempVal <= v_RtnVal){v_RtnVal = v_TempVal}}
+//	}
+	
+
+/*	
+// Same as above, but using Array Sorting:
+    var v_SortedArray = f_SortJsonArray(arg_Array, arg_Property);
+	var v_MinVal = parseInt(v_SortedArray[v_SortedArray.length-1][arg_Property]);
+	var v_MaxVal = parseInt(v_SortedArray[0][arg_Property]);
+	
+	 TEST: alert(v_MaxVal+"   "+v_MinVal)
+	
+	if (arg_MaxOrMin == "MAX")
+	{
+		return v_MaxVal;
+	}
+	else //(arg_MaxOrMin == "MIN")
+	{
+		return v_MinVal;
+	}
+//*/
+
+}
+//=============================================================================================

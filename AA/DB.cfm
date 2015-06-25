@@ -1,0 +1,35 @@
+<data-source>
+  <dbname>AA</dbname>
+  <driver>macromedia.jdbc.MacromediaDriver</driver>
+  <url>
+    jdbc:macromedia:oracle://192.168.10.13;SID=ALMNTEST
+  </url>
+  <username>ALMNTEST</username>
+  <password>au</password>
+  <encrypted>true</encrypted>
+  <encryption-class>
+    jrun.security.JRunCrypterForTwofish
+  </encryption-class>
+  <native-results>false</native-results>
+  <remove-on-exceptions>true</remove-on-exceptions>
+  <pool-statements>false</pool-statements>
+  <initial-connections>1</initial-connections>
+  <connection-timeout>1200</connection-timeout>
+  <transaction-timeout>20</transaction-timeout>
+  <cache-enabled>false</cache-enabled>
+  <cache-size>5</cache-size>
+  <cache-refresh-interval>30</cache-refresh-interval>
+  <jndi-name>Test_ora</jndi-name>
+  <poolname>Pool</poolname>
+  <minimum-size>0</minimum-size>
+  <maximum-size>2147483647</maximum-size>
+  <user-timeout>20</user-timeout>
+  <skimmer-frequency>420</skimmer-frequency>
+  <shrink-by>5</shrink-by>
+  <maximum-soft>true</maximum-soft>
+  <debugging>false</debugging>
+  <disable-pooling>false</disable-pooling>
+  <isolation-level>READ_UNCOMMITTED</isolation-level>
+  <description/>
+</data-source>
+

@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<glossarydata>
+ <entry name="Authorizing Agent" value="This is the person with authority to verify a registrant, and to certify the role to be assigned to that registrant.  For example, a PAO is the authorizing agent for all users within that country -- FSNs, foreign service, and civil service." />
+ <entry name="Control" value="Controls are interactive elements on webpages, or other graphical user interfaces, that allow you to input data, select an action, open a link, change a display, etc." />
+
+</glossarydata>

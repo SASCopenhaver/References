@@ -1,0 +1,1091 @@
+*************************
+ColdFusion Coding Standards Document
+*************************
+This is DRAFT ONLY and is intended only as a discussion document between Rich, Eric, Sergey, and Gary.
+
+
+*************************
+Sources
+*************************
+These were copied either in part or in whole from other ColdFusion Development "best practices" documents.  They may, therefore, not meet the goal of being generic yet.  So let's discuss them.  If it is too restrictive, let's change it.  Maybe we will feel the item doesn't belong at all.....
+
+
+*************************
+Scope
+*************************
+We need to look at these objectively and come up with a GENERIC set of coding standards that we can feel comfortable living with.  We do not want it to be too restrictive, keeping in mind that future development projects may require other methods that we haven't thought of or that may change.  If we make this document too restrictive, it may be difficult or impossible to change later.  That would make life hard to live!  GENERIC and GENERAL are the operational words here!
+
+
+*************************
+A.  General File/Template Rules
+*************************
+1.  At the top of every template, include the following information.  It should be wrapped in ColdFusion comments (NOT HTML comments!)
+1.	Template name
+2.	Author's name
+3.	Date created
+4.	Date last modified
+5.	Use (what pages call the template, the chain of events that the user might set in motion to call this particular page)
+6.	Purpose (what does this template do?)
+
+2.  Always Use Application.cfm and OnRequestEnd.cfm
+
+Even if there is no use for these files, ColdFusion will search for them on every request. Page-processing time will increase just by including empty files with these names in the site’s folder.  ColdFusion will search all the way up to the root of the web server's hard drive for an application.cfm file. That is, it stops only when it gets to C:\ (or root on Unix/Solaris/Linux), potentially exposing the application to a wandering application.cfm somewhere up the tree.
+
+3.  Set Defaults Only Once
+
+Use a check to see if a variable has been set. If it has, then move on. This will be slightly faster, and it is better programming form.
+
+4.  Use descriptive naming conventions for file names, form elements, and other dynamic data elements.
+
+General Naming Guidelines:
+All entities should be named for readability - names should be readable English words or phrases. The primary function or purpose of any entity should be obvious from its name. In general, "noun-verb" and "adjective-noun" phrases are the most natural choice.  In general, file names should be lower-case, optionally separated with underscores (determined by readability).  NO SPACES IN FILE NAMES!
+
+5.  Use indentation to facilitate “readability” of code 
+
+6.  Write valid code
+
+For example, use proper tag nesting, proper document declaration statements (DTDs), etc.
+
+7.  LEGAL ISSUES:  Section 508 (Accessibility) and Cookies
+
+Ensure code is written to comply with accessibility standards in mind as necessary.  Cookies are not allowed (in accordance with OMB).  Only true session cookies are allowed.
+
+8.  Use cftry/cfcatch and cferror tags for custom error handling when possible and as necessary.
+
+*************************
+Template Speed and Performance
+*************************
+
+1.  Rewrite Your Page If It Is Slower Than 2000 Milliseconds
+
+Two thousand milliseconds (two seconds) is the limit for a request.  It is possible to have many levels of included files, queries, etc., that all have to run to make up a single request.   If any request takes longer than 2000 milliseconds, it's a candidate for rewriting.  Exceptions to this rule would include such things as operations that will understandably take a long time and rely on external factors, such as a <CFHTTP> call.
+
+2.  Use <cfswitch> Instead of <cfif>
+
+This general rule makes sense only on two frequently confronted occasions:
+   1. When you have a specific expression that you can evaluate against
+   2. When you have a set of more than three <cfelseif> clauses
+
+
+3.  Use <cfscript> Instead of Three or More <cfset>s
+
+The reason is this: When you use cfscript, the entire block gets sent to the engine at once. So, ColdFusion has to make only one read. When you send three or more <cfset> statements, ColdFusion gets to interpret them once each, or three times. Therefore, it's faster and cleaner.
+
+4.  Avoid Using IIF
+
+The "immediate if" function (IIF) will process nearly two times slower than a cfif/cfelse block that accomplishes the same thing.  In addition, it is often harder to read.
+
+*************************
+Database Issues
+*************************
+
+1.  Let the Database Do the Work
+
+When possible, pass aggregate functions on data to the database. However, do the formatting of data in your code, so you have more control.  By employing conditional logic or other ColdFusion code inside the SQL statement, ColdFusion will create the statement first and then will send the SQL statement off to the database. Writing complex CF code inside the <CFQUERY> tags does not incur a longer database connection time.  
+
+It just so happens that the Oracle number and computation engine is written directly into the database. Therefore, simple arithmetic functions are performed very quickly and efficiently.  The same goes for date functions, such as TO_DATE and TO_CHAR. More complex date functions like LAST_DAY (which returns the last day of a given month) are better handled outside of the database.
+
+2.  Use the maxrows Attribute of the <cfquery> Tag 
+
+If you know how many rows you're supposed to get, set the maxrows attribute to that number to improve database performance.
+
+3.  Use Query-of-Queries Capability Judiciously
+
+There are major benefits to the new query-of-queries capability; among these are the ability to perform cross-datasource joins, cross-datasource unions, and in-memory denormalization. And, of course, it is faster to retrieve memory-resident values. All of these can really bring together enterprise business applications.  Determine what you need, and use only that. Determine your trade-offs, and act according to greatest benefit (do some tests).
+
+4.  Use Native Drivers for Oracle DB connections
+
+Native Oracle drivers are better supported because they form the baseline, whereas ODBC drivers are added in later (by Oracle) as a secondary access method.
+
+Establishing a database connection with an Oracle database can take anywhere from 0.5 to 3 seconds. Enable connection pooling, which is done in the native drivers setup. Set the connection pool maximum to be the same as the maximum number of requests the ColdFusion Server can make.
+
+Be aware that the Oracle server itself limits the maximum number of connections it will accept.  Make sure the DBA configures this to coincide with your ColdFusion servers.
+
+5.  Use Bind Variables when possible
+
+With the cfqueryparam tag (ColdFusion Server version 4.5), bind variables can produce performance improvements of more than 500 percent.  It also makes applications more secure and “hacker-proof’.
+
+6.  Avoid using CFInsert and CFUpdate
+
+7.  List out fields when doing an INSERT. 
+
+Instead of coding your insert as the following:  INSERT INTO tablename VALUES(...), actually list out the fieldnames as follows:  INSERT INTO tablename(field1,field2,...) VALUES(...)
+
+8.  Write queries that perform INDEX searches, not full table scans if possible
+
+9.  Use Blockfactor Attribute in <cfquery> for SELECT statements
+
+If it is known the query will only return one row, it is not necessary to specify a blockfactor.  However, if it is not known how many rows will be returned, set the blockfactor to largest blockfactor possible (100), so it will fetch the rows in large blocks.  Of course, if the number of records returned is known (such as for a next ‘n’ records query), set the blockfactor to that value.
+
+*************************
+Variables
+*************************
+
+1.  Use variable locking when necessary
+
+2.  Set the variable scope when setting them with <cfset> or <cfparam>
+
+3.  Use variable scope when reading, calling, or manipulating variables
+
+4.  Don’t use the Pound Signs (#) unnecessarily
+
+
+*************************
+Macromedia Coding Standards
+*************************
+Yes, I found these on an obscure website (don't remember where), and I ripped it in its entirety.  They are Macromedia's internal coding standards - looks like a lot of good stuff here!
+
+Introduction
+This document provides guidelines for developing ColdFusion MX applications within Macromedia's Web Technology Group. The rules and guidelines given here are intended to apply to CFMX 6.1 specifically and may not be appropriate for earlier versions (including CFMX 6.0). It is a living document, growing over time, incorporating feedback from Web Technology Group developers and, sometimes, the larger ColdFusion community, as the guidelines are 'proved' in our live environment.
+
+The first public release of this document (2.0) was made in Summer 2002. Since then, the Web Technology Group has launched the all-new macromedia.com website, powered by ColdFusion MX. This release (3.0) takes advantage of that experience and the changes in ColdFusion Components introduced by CFMX 6.1 a.k.a "Red Sky".
+
+Although this document is published as-is for the ColdFusion community, Macromedia's Web Technology Group own the document and decide what goes into it. You may, however, take a copy of this document and modify it as you see fit to create your own coding guidelines as long as you acknowledge this original document.
+
+Base Document
+These guidelines were originally based on the Spectra Team Coding Standards by Mike Andler and Tom Lane, 12/14/2000.
+
+Style: Naming, Comments & Layout
+This section provides guidelines on naming conventions (for files, tags, variables etc), comments and source code layout.
+
+Naming
+This section provides guidelines for naming various entities in your ColdFusion code. 
+
+General Naming Guidelines
+All entities should be named for readability - names should be readable English words or phrases. The primary function or purpose of any entity should be obvious from its name. In general, "noun-verb" and "adjective-noun" phrases are the most natural choice, e.g.,:
+
+course_list_output.cfm - invoked in a URL
+sales_tax_calculate.cfm - a custom tag
+productinformation.cfc - a ColdFusion component
+userName - a variable, attribute, property etc
+The singular noun is preferred. In general, files will be lower case with words optionally separated by underscores.
+
+Abbreviations
+Abbreviations and acronyms should be avoided. Only a few, widely understood acronyms or abbreviations may be used, such as ID, CGI and URL. Such abbreviations and acronyms will be uppercase, unless they are part of a filename that forms part of a URL, in which case they will be lowercase, e.g.,
+
+userID - variable, attribute, property etc
+set_user_id.cfm - invoked in a URL
+File Naming
+Suffixes:
+
+HTML files end in .html; 
+CFML files end in .cfm; 
+Component files end in .cfc; 
+XML files end in .xml. 
+In general, follow our existing file naming conventions for files: all URL-accessible filenames shall be lowercase, with words optionally separated by underscores (determined by readability). Filenames must never contain spaces! Files whose names are not URL-accessible should also be lowercase for consistency but we allow more leeway in this situation. 
+
+Note: Application.cfm and OnRequestEnd.cfm are the only exceptions to the lowercase filename rule for URL-accessible files and must have exactly the case shown! The Mach II framework files are mixed case (and are not URL-accessible) - when referencing those files (as type names), you must use the same exact case as the filename.
+
+ColdFusion Components
+These are similar to Java classes but instead of following the traditional Java class naming conventions (MixedCase), we have historically kept component filenames lowercase because, prior to CFMX 6.1, mixed case component filenames were not uniformly supported. With CFMX 6.1, this practice can be relaxed and mixed case component names can be used if desired for components that are not URL-accessible.
+
+The component name shall be lowercasewords, lowercase_words or MixedCaseWords; all method names, property names and instance names (variables referring to components) shall be mixedCaseInitLower. Components that are URL-accessible, e.g., that implement Web Services, shall be lowercasewords or lowercase_words. All references to component names in code shall match exactly the case of the implementation filename, i.e., references will be path.to.lowercasewords, path.to.lowercase_words or path.to.MixedCaseWords as appropriate. 
+
+If a ColdFusion component contains methods that are accessible as Web Services or via Flash Remoting (i.e., the cffunction tag specifies access="remote"), then the component should be stored under {cfmxroot}/wwwroot/{applicationname}/ (and have lowercase filenames). Otherwise, ColdFusion components should be stored under {cfmxroot}/extensions/components/{applicationname}/.
+
+The directory structure should reflect the logical grouping of the major elements of each application. All the application-specific components should live in application-specific sub-directories. All the utility and common reusable components should live in appropriately named library sub-directories, e.g., WTG has both lib and util sub-directories for these common components (although those names are somewhat arbitrary).
+
+Custom Tags
+Custom tag names will be lowercase_words. Their implementation filename should be lowercase_words.cfm, stored somewhere within the {cfmxroot}/extensions/customtags/ hierarchy (so custom tags cannot be invoked directly via a URL). They should be invoked using a tag prefix (defined using cfimport before the first use of any custom tags in each file - cfimport tags should be grouped together near the top of the file) e.g., <pfx:lowercase_words ...> ... </pfx:lowercase_words>. The pfx will usually be the lowest-level directory containing the tags, e.g., mmlf for {cfmxroot}/extensions/customtags/mmlf/ - used like:
+
+<cfimport taglib="/customtags/mmlf" prefix="mmlf" />
+...
+<mmlf:ssi virtual="/path/to/file.html" />
+The expectation is that directories under the Custom Tag Paths will have unique names - the tag prefix must be unique within a page. 
+
+Note: The ssi tag currently complains if you invoke it with a closing / but I think that's a bug that should be fixed!
+
+Note: CFX tags will not be used - instead write Java tag libraries and <cfimport ...> them (assuming you can't write the tag in CFML for some reason).
+
+Type Names
+The names used to reference ColdFusion types (e.g., in type= and returntype= attributes) shall be lowercase for built-in types (e.g., boolean, string). The names used to reference user-defined types (i.e., ColdFusion Components shall exactly match the case of the implementing filename, e.g., article, news_item, MachII.framework.Listener.
+
+Built-in CFML Tags, Attributes & Operators
+Built-in CFML tags shall be lowercase, just like our HTML tags. Attributes for CFML tags shall either be lowercase (mirroring XHTML-compliance) or mixed case, first letter lowercase (mixedCaseInitLower) - this is a stylistic choice but be consistent. Built-in operators shall be mixed case, first letter lowercase, e.g., mixedCaseInitLower.
+
+Note: This means simple built-in operators will be lowercase, e.g., is, and, or, not.
+
+Attributes, Fields, Functions, Methods, Parameters, Properties & Variables
+All these entity names will be mixedCaseInitLower. To enhance readability, boolean attributes and variables should generally begin with "is" or "has", e.g., <cfif hasFlash> ... </cfif>.
+
+Attribute Values
+All attribute values to all tags - except cfset, cfif and cfreturn - will be quoted, usually with double quotes ("). Single quotes (') may be used if the attribute value already contains a double quote.
+
+In cfset, the attribute name is always a variable name (possibly evaluated, e.g., arr[i]) and the apparent attribute value is really an expression. In cfif and cfreturn, the 'attribute' is really an expression. String values in expressions will be quoted (with " or ' as appropriate). Numeric values in expressions will not be quoted. Variable names in expressions will not be quoted, so that pound signs (#) are not needed, i.e., variableName instead of "#variableName#". The attribute name in cfset - the variable name - will not be quoted.
+
+Do not use evaluated variable names like "caller.#resultVariable#" or "varname_#index#" - use caller[resultVariable] or variables["varname_" & index] instead.
+
+The only acceptable boolean attribute values are true and false - which may be quoted or unquoted (in cfset, they should always be unquoted).
+
+Examples:
+
+<!--- string requires quotes: --->
+<cfset x = "A string" />
+
+<!--- other expressions require no quotes: --->
+<cfset y = len(x) />
+<cfif z gt y * 2 >
+
+<!--- simple variable requires no quotes: --->
+<cfset request.value = z />
+
+<!--- evaluated variable requires no quotes: --->
+<cfset caller[result] = z />
+Scope Names
+Scope name qualifiers should be used with all variables (except var scope variables inside functions), where there is any possibility of a collision with a name in another scope. Since ColdFusion looks 'up' the scope chain if it cannot find a name in the current scope, variables scope should be used for safety, to avoid accidentally picking up the wrong variable in an outer scope, e.g., a cookie. See Creating and using variables in scopes on LiveDocs for more information about scope lookup.
+
+Inside components, variables scope refers to non-public instance data (and this scope refers to public instance data). If you want a local variable in a function, you should use var and then set the variable to 'declare' it (at the top of the function). Within a script function, you introduce local variables as follows:
+
+function foo() {
+    var localVar = 0;
+    var anotherLocalVar = 0;
+    ...
+}
+Within cffunction, you can use either of the following styles:
+
+<!--- using tag syntax for the function body: --->
+<cffunction name="bar">
+    <cfset var localVar = 0 />
+    <cfset var anotherLocalVar = 0 />
+    ...
+</cffunction>
+
+<!--- using script syntax for the function body: --->
+<cffunction name="bar">
+    <cfscript>
+        var localVar = 0;
+        var anotherLocalVar = 0;
+        ...
+    </cfscript>
+</cffunction>
+Inside components, there are two special scopes: this and variables (in CFMX 6.0, variables scope was not available and you used instead the unnamed scope). When variables are qualified with this scope, they become public data members of the component instance and accessible to code outside the component. When variables are qualified with variables scope, or left unqualified - using the unnamed scope, they become non-public data members of the component instance (and, therefore, are not accessible outside the component). This is important since unqualified variables within functions will persist for the lifetime of the instance - which may not be what you intended.
+
+Example:
+
+<cfcomponent>
+    <cffunction name="example">
+        <cfset var localVar = "Just in this function" />
+        <cfset variables.nonPublicVar = "Non-public data member" />
+        <cfset anotherNonPublicVar = "Not recommended - use 'variables'" />
+        <cfset this.publicVar = "Public data member" />
+    </cffunction>
+    <cffunction name="more">
+        <cfset var localVar = "Different to example localVar" />
+        <cfset var x = variables.nonPublicVar & " set in 'example' above" />
+    </cffunction>
+</cfcomponent>
+Note: this.member and member denote two distinct variables in distinct scopes (but don't do this: in general, name collisions are bad practice and cause debugging headaches!). variables.member and member denote the same variable (assuming member is not also declared with var) - always use variables.member for clarity.
+
+Scope names should follow the same capitalization rules as variables:
+
+Examples:
+
+form.myFormField
+URL.myURLVar - note: URL is an acronym (uppercase)
+cfhttp.fileContents - note: cfhttp is a built-in tag name (lowercase)
+variables.pageVar
+arguments.argName
+this.publicVar
+Query Naming
+Query names follow the same convention as other variable names, using the verbs Update, Insert, Delete, or Select as follows:
+
+Query Type
+ Pattern
+ Example
+ 
+Select Data
+ querynameSelect
+ customerSelect
+ 
+Update Data
+ querynameUpdate
+ customerUpdate
+ 
+Insert Data 
+ querynameInsert
+ customerInsert
+ 
+Delete Data 
+ querynameDelete
+ customerDelete
+ 
+
+Comments
+This section provides guidelines on commenting your source code. In general, we should comment code to assist other developers work on it in the future. We do not want our comments to be visible to the public so we do not want to generate HTML comments from CFML - we use <!--- ... ---> in CFML which does not get published into the HTML. This means that for file types that can be accessed directly over the web, such as JavaScript include files, XML files and CSS style sheets, we should keep comments to a minimum - documentation for such files must be maintained separately, in the "projects" area of our internal site for example. Comments are there to be read - consider your audience!
+
+General Guidelines
+Write CFML style <!--- ... ---> comments, for all important entities, that describe what code does and why - document the how if it is not obvious.
+
+When you make a change, comment it. Identify the change with the date and your user name:
+
+<!--- 2001-11-26 scorfield Expanded the Comments section --->
+When you want to leave a note about a bug to be fixed or functionality to be added, put TODO: in front of the actual comment so developers can easily search for them:
+
+<!--- 2001-11-26 scorfield TODO: Incorporate everyone's feedback --->
+Additional standard search keywords can be added after TODO: e.g., FIXME:, NOTE: - this is very important as it helps your audience, other developers. Furthermore, standard tags like this can be read by code editors such as jEdit to create a "task list" whenever you're working on a file.
+
+<!--- 2001-11-26 scorfield TODO: BUG: Fails on Fridays --->
+Here are some of the comment 'keywords' supported by jEdit's Task List plugin: DEBUG: DONE: FIXME: IDEA: NOTE: QUESTION: TODO: XXX:. You can easily customize jEdit's list and add new keywords.
+
+File Comments
+Each CFML file should begin with an CFML style <!--- ... ---> comment containing the filename and a standard copyright message followed by an explanation of the file and then, optionally, its modification history:
+
+<!---
+    $Id: news.cfm,v 1.7 2003/06/03 21:46:27 scorfield Exp $
+    Copyright (c) 2002 Macromedia, Inc.
+
+    Description:
+        This page renders information about each product.
+    Parameters:
+        product - the name of the product family
+    Usage:
+        product_page.cfm?product="Flash"
+    Documentation:
+        http://sandbox.macromedia.com/wtg/projects/runtime/product_page.html
+    Based on:
+        /software/dreamweaver/index.html 1.74
+
+    $Log: $
+    Revision 1.2  2001/07/26 15:19:03  scorfield
+    Added copyright comment
+
+    Revision 1.1  2001/07/23 11:23:46  scorfield
+    Initial version
+--->
+Note: We use $Id: $ so that CVS will insert the filename, version and last modified date and author.
+
+The explanatory comment for the file should contain, roughly in decreasing order of importance:
+
+a brief Description: of the file, including some kind of classification for components and custom tags,
+a list of Attributes: / method or URL Parameters: / Result: variables with brief descriptions,
+Dependencies:, both outward (this file depends on other things) and inward (things known to depend on, or use, this file - preferably with URLs), 
+a Usage: example,
+the URLs of any known Documentation: for this file, 
+any files that were used as a basis for creating this file (Based on:),
+any files that have in turn used this file as a basis because future changes to this file may require similar changes to those files (Basis for:).
+The modification history is optional but can be automatically generated by $Log: $. It prepends each new entry at check-in, so provide meaningful comments when you check files into CVS. In long $Log: $ entries, developers may replace older sections of the log by:
+
+... See the CVS log for details ...
+Note: $Log: $ can cause problems for automated CVS merges - that's another reason to prune the generated log entries at regular intervals (or omit $Log: $ altogether).
+
+Component Comments
+The cfcomponent, cfproperty, cffunction and cfargument component tags all have displayName and hint attributes which should be completed for every component, every property, every method (function) and every argument. For cffunction, if the function throws any exceptions, the hint attribute should have "<br />Throws: document any exceptions that the function can throw" at the end of the hint. 
+
+Put the label text you might show to a business user (on an edit form) in displayName. 
+Put a sentence or two of usage details in the hint attribute. 
+Note: The displayName and hint 'comments' are in addition to the file comment described above. 
+
+Layout
+This section provides guidelines on source code layout for ColdFusion (and HTML).
+
+General File Format
+Make sure you use Unix Linefeeds - see tool setup tips for information on making Dreamweaver, CF Studio, etc. behave properly. All indentation should be based on 4-space tabs - actual TAB characters are preferably to multiple SPACE characters to reduce file size and make editing easier.
+
+General HTML Guidelines
+Use Dreamweaver's validator tools to help you create clean, cross-browser XHTML-compliant HTML. All generated HTML must pass tidy -errors with no errors, except that tables used purely for presentation do not need the "summary" attribute.
+
+tidy is a free tool from Dave Raggett, one of the HTML people at the W3C. You can find it at http://tidy.sourceforge.net/. http://www.w3.org/People/Raggett/tidy/ says "Tidy is able to fix up a wide range of problems (in HTML documents) and to bring to your attention things that you need to work on yourself." 
+
+All generated HTML must pass Section 508 accessibility guidelines. See Accessibility / Section 508 Guidelines for more detail.
+
+All generated HTML must specify a Content-Type, a Content-Language and a character set encoding (which should be UTF-8). See Globalization for more detail.
+
+HTML & XHTML Compliance
+All generated HTML should be XHTML-ready: 
+
+Lowercase element and attribute names, 
+All attribute values in quotation marks, 
+Close all tags correctly, e.g., close <p> with </p> and <li> with </li>, 
+Although there are rumors that closing empty-body tags with /> breaks some old browsers, it is still recommended to do this, e.g., <br /> (note the space before the /), <img src="..." ... />. Set Dreamweaver to generate XHTML instead of HTML. 
+Generated HTML that is XHTML-compliant should begin with this:
+
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+Some browsers interpret this as strict XHTML so you also need to add the following to the HTML tag:
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+Do not put the above code in generated HTML that is not XHTML-compliant!
+
+CFML & XHTML Compliance 
+ColdFusion source code cannot quite be written to be purely XHTML-compliant because of certain tags (cfif / cfelse, cfreturn, cfset) but you should make an effort to be as XHTML-compliant as possible. cfelse cannot have a closing tag so it cannot be XHTML-compliant; cfif and cfreturn do not have an attribute="value" syntax so they cannot be XHTML-compliant (but cfif has a closing /cfif tag and cfreturn can and should have a self-closing /); cfset does not in general follow the attribute="value" syntax and these guidelines recommend that for readability you do not quote the value in cfset - but cfset can and should have a self-closing /. This makes the source code more consistent (across CFML and HTML) and will also help you avoid subtle errors such as unterminated nested cfmodule calls.
+
+If a simple custom tag invocation is written as XHTML-compliant, i.e., with a closing />, it will be executed twice as if it were a paired tag with an empty body. This can be surprising at first and cause subtle bugs if your code doesn't expect it! You can guard against this in simple custom tags by enclosing the code with:
+
+<cfif thisTag.executionMode is "start">
+    ...
+</cfif>
+Complex custom tags will probably already use thisTag.hasEndTag and have different code executed for thisTag.executionMode is "start" and thisTag.executionMode is "end".
+
+All built-in CFML tags should be written as XHTML-compliant where possible (cfif, cfelse, cfset and cfreturn are notable exceptions).
+
+Table Indentation
+These are the guidelines for the layout of table source code (see also Accessibility / Section 508 Guidelines):
+
+All table tags go on their own lines. 
+<tr> tags are placed at the same indentation level as their parent <table>. 
+<td> tags are indented. 
+The contents of <td> tags may be placed on a separate line and indented, or if they are short they may be placed on the same line as the <td>. 
+<table> attributes should be explicitly specified. 
+Example:
+
+<table border="0" cellPadding="0" cellSpacing="0">
+<tr>
+    <td>
+        Table data goes here
+    </td>
+    <td>Short text here</td>
+    <td>
+        <table>
+        <tr>
+            <td>
+                Nested table data here
+            </td>
+        </tr>
+        </table>
+    </td>
+</tr>
+</table>
+If whitespace is a problem (e.g., with very long / deeply nested tables), use your judgment to adjust the layout to improve the readability of the code. Given our use of CSS instead of tables for layout, this should be a rare occurrence! 
+
+Tag Layout
+When more than one attribute is passed to a custom tag, each attribute should be placed on its own line and indented. The tag closing bracket (>) should be on a line by itself, indented the same as the matching opening bracket. This allows for long, descriptive names for both the custom tag and its attributes. For very short (single attribute) or relatively short but frequently repeated tags (e.g., cfparam), this is optional.
+
+Examples:
+
+<cf_my_custom_tag_two
+    attributeOne="ValueOne"
+    attributeTwo="ValueTwo"
+    attributeN="ValueN"
+/>
+<cf_my_custom_tag
+    attributeTwo="Value Two"
+/>
+<cf_my_custom_tag attributeOne="Value One" />
+<cfparam name="myVar" default="x" type="boolean" />
+HTML tags do not need to follow these rules, due to whitespace considerations.
+
+ColdFusion Component Layout
+ColdFusion components should follow the same general rules for layout as other tags.
+
+Example:
+
+<cfcomponent hint="..." displayName="...">
+
+    <cffunction name="doSomething" returnType="string">
+        <cfargument name="arg" type="string" />
+
+        <cfset variables.thing = arguments.arg />
+        <cfreturn arguments.arg />
+
+    </cffunction>
+
+</cfcomponent>
+An acceptable alternative, using more vertical space, is as follows:
+
+<cfcomponent hint="..." displayName="...">
+
+    <cffunction
+        name="doSomething"
+        returnType="string"
+    >
+        <cfargument
+            name="arg"
+            type="string"
+        />
+
+        <cfset variables.thing = arguments.arg />
+        <cfreturn arguments.arg />
+
+    </cffunction>
+
+</cfcomponent>
+SQL/cfquery Indentation
+The following examples will most effectively describe the preferred SQL indentation standards.
+
+Example 1:
+
+
+--------------------------------------------------------------------------------
+
+SELECT
+    TO.COLUMN_ONE, 
+    TT.COLUMN_TWO,
+    TO.COLUMN_THREE
+FROM
+    TABLE_ONE TO,
+    TABLE_TWO TT
+WHERE
+    TO.TABLE_ONE_ID = TT.TABLE_TWO_ID
+    AND
+    TT.TABLE_TWO_ID = 10
+ORDER BY
+    TO.TABLE_ONE_ORDER_KEY
+
+--------------------------------------------------------------------------------
+
+Example 2 (Insert type A):
+
+
+--------------------------------------------------------------------------------
+
+INSERT INTO 
+    TABLE_ONE
+(
+    COLUMN_ONE,
+    COLUMN_TWO,
+    COLUMN_THREE
+)
+VALUES
+(
+    'ValueOne',
+    'ValueTwo',
+    'ValueThree'
+)
+
+--------------------------------------------------------------------------------
+
+Example 3 (Insert type B):
+
+
+--------------------------------------------------------------------------------
+
+INSERT INTO TABLE_ONE
+(
+    COLUMN_ONE, COLUMN_TWO, COLUMN_THREE
+)
+VALUES
+(
+    'ValueOne', 'ValueTwo', 'ValueThree'
+)
+
+--------------------------------------------------------------------------------
+
+Example 4:
+
+
+--------------------------------------------------------------------------------
+
+UPDATE TABLE_ONE 
+SET 
+    COLUMN_ONE = 'ValueOne', 
+    COLUMN_ONE = 'ValueTwo' 
+WHERE 
+    TABLE_ONE_ID = 10 
+     AND 
+    COLUMN_THREE = 'ValueThree'
+
+--------------------------------------------------------------------------------
+
+Structure: Application, Component, Tag etc
+This section provides guidelines on how to structure your code and take advantage of the power of ColdFusion Components, to create well-designed, maintainable ColdFusion applications.
+
+In general, MVC - Model-View-Controller - is a good, basic design pattern to use as a guideline for designing your application. It helps you focus on separating logic from presentation as well as refining the logic to separate the pure business model from the application workflow and logic.
+
+Construct as much of the application logic as possible using CFCs so that you can take advantage of the encapsulation and type safety that they offer, as well as providing better options for reuse. Structure the CFCs to be as independent of each other as possible and as self-contained as possible (loose coupling and high coherence respectively). In particular, structure CFCs so that environmental awareness (e.g., use of shared scopes) is minimized, using design patterns such as Session Façade.
+
+Mach II provides a well-designed, clean framework for building MVC-based applications. See the Mach II Development Guide for more information about object-oriented design and best practices for using that framework.
+
+Basic Modularity
+ColdFusion components, custom tags, tag libraries and included files should be used if their usage will satisfy any of the following three conditions:
+
+Reusability 
+Readability 
+Organization 
+That means that all but the very simplest ColdFusion page should take advantage of CFCs and / or custom tags. Components should be used in preference to custom tags (for encapsulation and type safety reasons) although in certain situations, e.g., where part of a page has a natural start and end that needs to be managed as a single unit, custom tags can be more idiomatic.
+
+A good example is the use of mmlf:renderpage (and mmlf:rnav) to wrap the body (and right navigation module) of a page and render it using standard header, footer and style sheets. Another good example of when it is natural to use a custom tag is the mmlf:ssi tag, used to perform 'server-side includes' of HTML fragments from the web servers. Both of these uses would be harder to achieve with CFCs and would be less intuitive to use.
+
+If performance is critical or external integration requires it, Java tag libraries should be used with cfimport in preference to CFX tags.
+
+File Structure
+Each file should begin with an appropriate comment - see Style: Comments.
+
+Component File Structure
+CFCs should be structured as follows:
+
+<!--- prolog comment --->
+<cfcomponent ...>
+    ...pseudo-constructor initialization (if any)...
+    ...public methods (with init() first)...
+    ...package methods (if any)...
+    ...private methods...
+</cfcomponent>
+The use of pseudo-constructor initialization should be kept to a minimum and instead an init() method should be used to initialize the component - see Good Practice: Constructors. The public methods are the most important part of the component so they the first thing someone reads. The public methods should be followed by any access="package" methods and then any access="private" methods. Users of a component should not have to read as far as the private methods in order to figure out how to use your component - well-chosen names (and good comments) for the public methods should be sufficient.
+
+.cfm File Structure
+Even within a single file, separate logic from presentation as much as possible. If logic and presentation code cannot be physically separated (into different files), then try to structure files along the following lines:
+
+<!--- prolog comment --->
+<cfsilent>
+...CFML logic...
+</cfsilent>
+
+<cfoutput>
+...HTML generation...
+</cfoutput>
+Note: cfsilent suppresses all HTML output. This should not be a problem if logic and presentation code are properly separated. An Alternative is to use cfsetting as follows:
+
+<cfsetting enablecfoutputonly="yes" />
+<!--- prolog comment --->
+...CFML logic...
+ 
+<cfoutput>
+
+...HTML generation...
+</cfoutput>
+<cfsetting enablecfoutputonly="no" />
+Note: You should have both the yes and the no versions of the tag present and in the same file (to avoid creating hard-to-debug problems with unexpected output or missing output).
+
+Directory Structure For Applications
+All ColdFusion code should live in a directory tree outside the install area for ColdFusion MX / JRun. On most servers, the root for that directory tree is /data/www/appserver/cfmx/ and we'll refer to that as the {cfmxroot} below:
+
+{cfmxroot}
+    wwwroot/           » web-accessible .cfm pages and .cfc Web Services
+    extensions/
+        components/    » tree for .cfc files
+        customtags/    » tree for .cfm custom tags
+        includes/      » tree for include files
+    config/            » tree for configuration files
+This implies that we have two Custom Tag Paths set up in the CFMX Administrator:
+
+{cfmxroot}/extensions/components/
+{cfmxroot}/extensions/customtags/
+We also have mappings for the root of the includes tree (for cfinclude) and the custom tags tree (for cfimport):
+
+/cfinclude             » {cfmxroot}/extensions/includes/
+/customtags            » {cfmxroot}/extensions/customtags/
+For Mach II development, we also have a mapping for including the core file:
+
+/MachII                » {cfmxroot}/extensions/components/MachII/
+See Site-wide Variables for information about a /environment mapping. 
+
+The pieces of each logical application live in an application-specific directory in each of the trees above, e.g., code for the Exchange application lives in:
+
+{cfmxroot}/wwwroot/exchange/
+{cfmxroot}/extensions/components/exchange/
+{cfmxroot}/extensions/customtags/exchange/
+{cfmxroot}/extensions/includes/exchange/
+Any Java libraries required should live in JRun's servers/lib/ directory (although, perhaps a little confusingly, in our build system we still have ant deploy to WEB-INF/lib/ as if it were part of CFMX and then the build system moves the files to the right place!). 
+
+URL Usage
+URLs must not hardcode server names such as www-staging, www.macromedia.com, etc. These variables will be different on staging, QA, integration and production and should be handled using Site-wide Variables (in the next section).
+
+URLs form the API to our web site. We have to live with them forever. Take the time to get them right, design your query string parameters carefully, be consistent, etc. Here are some preliminary specs.
+
+Site-wide Variables
+Some attributes within web applications depend on the server environment and will differ between development, staging, integration and production. The recommended approach for such attributes is to provide their values as request scope variables that are set as part of Application.cfm. However, Application.cfm itself should be a deployable file that is independent of the server environment so the variables should be set in a server-specific include file (i.e., a file that has the same name but different content on every server). This way, Application.cfm will be a standard, deployable source file that is identical in each of the four environments while the included file, or database table contents, are considered part of the server configuration itself.
+
+The server-specific include file will be called sitewideconstants.cfm and will exist in directories for development, staging, integration and production. The root Application.cfm will include the file as follows:
+
+<cfinclude template="/environment/sitewideconstants.cfm">
+In each environment, /environment will be mapped to the appropriate directory, outside the document root. For the most part, this is the target config directory created automatically by the build system ({cfmxroot}/config/target/). Similarly, /cfinclude will be mapped to the include file root ({cfmxroot}/extensions/includes/). The build system automatically creates a serverspecific.cfm configuration file that contains:
+
+request.buildTag - string identifying the build on this server 
+request.buildWebServer - string identifying the web server name for this back end system, e.g., "www.macromedia.com" 
+request.buildAppServer - string identifying this application server name, e.g., "d65app1.macromedia.com"; 
+request.buildAppCluster - string list identifying all the application server names in this cluster, e.g.,
+"d65app1.macromedia.com,d65app2.macromedia.com,d65app3.macromedia.com" 
+The primary Application.cfm file will also include that, as follows:
+
+<cfinclude template="/environment/serverspecific.cfm">
+The CVS source code control tree looks like this:
+
+/source/
+    docroot/                Web Server Document Root
+        swf/                .swf
+    java/                   Java Source Root
+        com/
+            macromedia/
+                eai/        com.macromedia.eai package
+                ...
+        config/
+            development/    Development configuration for Java apps
+                application/
+                            Specific configuration for application
+            staging/
+                application/
+            integration/
+                application/
+            production/
+                application/
+    neo_root/               Application Server Root
+        config/
+            development/    Development
+            staging/        Staging
+            integration/    Integration
+            production/     Production
+            target/         Deployed directory (/environment)
+        extensions/         Non-URL accessible CF files
+            components/     ColdFusion Components
+				MachII/		Mach II framework (/MachII)
+            customtags/		Custom Tags (/customtags)
+            includes/       Included Files (/cfinclude)
+        wwwroot/            .cfm Document Root
+In addition to the source code tree shown above, the following directories will also exist in the repository, which is documented in full in the Dylan65 CVS Layout.
+
+source/
+    database/               DDL and other files
+    docs/                   Engineering Document Tree
+    infrastructure/         Non-Web Configuration (e.g., messaging)
+    orientation/            Orientation Projects
+    qa/                     QA (e.g., test harnesses)
+    release_eng/            Release Engineering (e.g., scripts)
+    scratch/                Scratchpad for anything!
+The general assumption is that global include files of all sorts will live outside the document root, in appropriate directory structures, with suitable logical names for mappings.
+
+Application.cfm
+There will be a root Application.cfm file that provides all the site-wide core services such as application and session settings, site-wide constants, form / URL encoding machinery etc.
+
+Each "application" on the site will also have an Application.cfm file containing application-specific code that starts by including the root Application.cfm file. Each "application" will also typically have an include file, applicationvariables.cfm, that defines the application-specific variables. This will also be included by the application-specific Application.cfm file. The variables should be those that might be needed by other applications that need to take advantage of the services of this application, e.g., the membership application might define an include file with LDAP and data source settings, for use by the store and exchange applications.
+
+The applicationvariables.cfm file belongs in:
+
+{cfmxroot}/extensions/includes/{appname}/
+/Application.cfm:
+
+set up application and session settings:
+<cfapplication name="macromedia_com" sessionmanagement="true" ...> 
+user session setup (sets up session.membership.user etc). 
+process loc= to create request scope language / locale values - see Globalization. 
+globalization / encoding:
+<!--- Set encoding to UTF-8. --->
+<cfprocessingdirective pageencoding="utf-8">
+<cfcontent type="text/html; charset=UTF-8">
+<cfset setEncoding("URL", "UTF-8")>
+<cfset setEncoding("Form", "UTF-8")> 
+include site-wide and server-specific constants:
+<!--- Site-wide constants --->
+<cfinclude template="/environment/sitewideconstants.cfm">
+
+<!--- server-specific variables --->
+<cfinclude template="/environment/serverspecific.cfm"> 
+/{appname}/Application.cfm:
+
+include root file:
+<cfinclude template="/Application.cfm"> 
+include public application-specific variables:
+<cfinclude template="/cfinclude/{appname}/applicationvariables.cfm"> 
+set up private application-specific data 
+Exception Strategy
+ColdFusion MX allows exceptions to have a pseudo-hierarchy by allowing cfcatch to specify a type= attribute that has a compound dot-separated name, like a component name, that will catch exception that have that type or a more specific type, e.g.,
+
+<!--- catches feature.subfeature.item: --->
+<cfcatch type="feature.subfeature.item">
+<!--- catches feature.subfeature.{anything}: --->
+<cfcatch type="feature.subfeature">
+<!--- catches feature.{anything}: --->
+<cfcatch type="feature">
+Each 'application' (or feature) should define and publish its exception hierarchy. Most hierarchies will probably only have feature and item, e.g., Membership.NO_SUCH_ATTRIBUTE. The intent is that the feature.item (or feature.subfeature.item) type should entirely specify what exception has occurred.
+
+Each application should throw fully-qualified exception types (feature.item or feature.subfeature.item) and a descriptive message that says - in English - which component / method threw the exception and a description of the problem, e.g.,
+
+<cfset msg = "MembershipAdminMgr.setAttributeName() :: " &
+        "no attribute could be found with the given attribute name">
+<cfthrow type="Membership.NO_SUCH_ATTRIBUTE" message="#msg#">
+The code that invokes that application should catch the exceptions using fully-qualified types that it can handle, followed by feature.subfeature or feature for reporting more generic exceptions, e.g.,
+
+<cfcatch type="Membership.NO_SUCH_ATTRIBUTE">
+    <!--- handle missing attribute error --->
+</cfcatch>
+<cfcatch type="Membership">
+    <!--- handle general membership failure --->
+</cfcatch>
+<cfcatch type="application">
+    <!--- handle general application failure --->
+</cfcatch>
+...
+Debugging
+A page may accept a URL parameter debug=1 to enable debugging output within the page. Such pages should use the getrequestsettings tag which processes URL parameters into request scope. The appropriate sitewideconstants.cfm file controls whether or not debugging is enabled in a particular environment.
+
+Debugging output within a page should be structured as follows:
+
+if ( request.settings.debug ) {
+    // output debugging information
+}
+Do not use URL.debug directly.
+
+Shared Scopes, Sessions, Clustering & Locking 
+This section discusses the considerations behind use of shared scopes (application, server, session etc), how sessions are managed, how we use clustering and what to do about locking.
+
+Clustering & Session Scope 
+We use hardware load balancing with sticky session between our web servers and our application servers. We use the underlying J2EE Session Variables mechanism (which uses an in-memory, browser-based cookie). We rely on session scope data in many of our applications, including storing CFC instances in session scope.
+
+If a server drops and we lose session, that user will get switched automatically to a new server in the cluster and we will have to recreate their session data. This can impact two things:
+
+Authentication level (see below for more details), 
+Session-specific data. 
+If a session is lost, "Level 2" membership applications will require users to verify their login credentials again at that point ("Level 1" membership applications will be unaffected - in terms of authentication - since the "Remember Me" cookie determines that level of authentication).
+
+Session-specific data needs a little more care:
+
+If the data is being cached purely for performance reasons, then it can easily be recreated (e.g., the shopping cart in the store). 
+If the data represents historical state in a session (such as data entered in previous forms) then a judgment call should be made as to how important it is to preserve the information (e.g., by passing all the data between subsequent page requests rather than using session scope). 
+As a general guideline, use session scope sparingly.
+
+Use of Shared Scopes
+Do not use client scope. Client scope limits you to text data (so structured data needs to be WDDX-transcoded in and out of client scope); it relies on either persistent cookies or database storage - the former is intrusive for users (and doesn't work well for shared computers), the latter introduces a potential performance hit on every request (and we try to keep database access to a minimum).
+
+You may use session scope for user-specific data but see the caveats and considerations above.
+
+For data caching that is not user-specific, use server scope or application scope. For macromedia.com, we're the only application in town (because we need a single session - single sign-on - across all parts of macromedia.com), so we use server scope instead of application scope (server scope access is marginally faster than application scope).
+
+Locking & Shared Scopes
+When accessing and / or updating data in shared scopes, always consider the possibility of race conditions (i.e., where two concurrent requests could access and / or update the same data). If a race condition is possible and might affect the behavior of your code, you need to use cflock to control execution of the code around the shared resource.
+
+If the shared resource is in server or application scope, you should use named locks to control access - and choose a name that uniquely identifies the resource being locked, e.g., use server_varname when locking an update to server.varname.
+
+If the shared resource is in session scope, you should generally use a scoped lock on session itself.
+
+In both cases, remember that you are only trying to prevent race conditions affecting your code: most read operations do not need to be locked; most write operations should be locked (unless the race condition is either unimportant or cannot affect the outcome). 
+
+Authentication Levels & Sessions
+macromedia.com has three levels of authentication:
+
+guest 
+known, unauthenticated ("remembered") 
+known, authenticated 
+Machinery exists in the root Application.cfm that establishes which state the current session is in and creates a session.membership.user object that can be queried:
+
+getAuthLevel() - string - GUEST_USER, REMEMBERED_USER, AUTHENTICATED_USER 
+getAuthLevelID() - numeric - 0, 1, 2 respectively 
+isLoggedIn() - boolean - true if level 2 else false 
+getUserID() - numeric - internal user ID if level 1 or 2 else -1 
+
+
+Good Practice
+This section provides some hints and tips that are considered "good practice".
+
+Booleans
+Booleans are always true or false, conditions are also true or false - do not test a boolean expression against a value, just test the expression:
+
+<cfif boolVar is "true">     <!--- BAD! --->
+<cfif boolVar is "false">    <!--- BAD! --->
+
+<cfif boolVar>               <!--- good --->
+<cfif not boolVar>           <!--- good --->
+cfswitch/cfcase
+Instead of cascading cfelseif blocks, when you are branching on the value of a single expression, use cfswitch and cfcase instead:
+
+<!--- bad: --->
+<cfif expr eq "Value A">
+    ...
+<cfelseif expr eq "Value B">
+    ...
+<cfelse>
+    ...
+</cfif>
+
+<!--- good: --->
+<cfswitch expression="expr">
+    <cfcase value="Value A">
+        ...
+    <cfcase>
+    <cfcase value="Value B">
+        ...
+    </cfcase>
+    <cfdefaultcase>
+        ...
+    </cfdefaultcase>
+</cfswitch>
+Components & cfargument
+ColdFusion MX does not require that you use cfargument tags but they provide validation (type safety) and act as additional documentation - always provide a cfargument tag for each named argument your function expects and follow these rules:
+
+Always specify the type= attribute in your cfargument tags. Try to avoid using type="any". 
+Always specify the required= attribute in your cfargument tags. 
+If an argument is required, do not specify a default= attribute. 
+If an argument is not required, you may specify a default= attribute (but remember that you will not be able to tell the difference between the caller omitting that argument and the caller providing that same default value as an argument). 
+If you need to detect whether a non-required argument was provided, do not specify default= but instead use structKeyExists(arguments,"argName") in the function body. 
+Components & cfproperty
+Be aware that the cfproperty tag is of limited use - it does only two things:
+
+It provides additional type validation for Web Service return types. 
+It provides a way to add metadata to components. 
+In general, cfproperty should not be used - it does not provide type checking for instance data (in general) and it does not provide default values for instance data so its presence can be misleading rather than helpful.
+
+If you really are returning a component type from a Web Service and want the public data members of that component to be type-checked at runtime, then cfproperty can be useful.
+
+If you are creating a metadata-driven system, then cfproperty can be useful (although dynamic systems driven by component metadata tend not to scale well!).
+
+Components & Constructors
+All components should define a method called init() that initializes the instance, even if the body of the method is empty, i.e., the initialization doesn't do anything. This makes usage of components consistent since you are guaranteed to be able to call init() on any component instance, just as you can for Java objects created within ColdFusion. The method should have a return type that matches the component and it should return this so that the following construct is always legal:
+
+<cfset obj = createObject("component","util.lib.thing").init() />
+This matches the way that createObject().init() behaves for Java objects - init() returns the fully initialized Java object.
+
+The util.lib.thing CFC would have a method that looks like:
+
+<cffunction name="init" access="public" returntype="util.lib.thing">
+    ...
+    <cfreturn this />
+</cffunction>
+If your component extends another component, your init() method should begin with a call to super.init() to initialize the base component.
+
+Note: The call to super.init() must use positional arguments - the argumentCollection= calling style does not work with methods called via super.
+
+Note: There is a notable exception to this guideline - when you are extending components in Mach II (listeners, plugins, event filters), instead of defining a method called init(), you define a method called configure() (which does not return anything - configure() has returnType="void"). This is because the framework itself uses init() for its own initialization and provides configure(), which it automatically calls for you once the framework has been initialized, so that you do not have to worry about any initialization arguments that the framework requires. 
+
+Custom Tags
+Custom tags should be organized into related group by using a meaningful directory tree under the Custom Tag Path (defined in the ColdFusion Administrator). This makes it easier to use cfimport to access specific groups of custom tags. 
+
+All custom tags should anticipate being executed in both start mode and end mode, i.e., they should be structured as follows:
+
+<cfif thisTag.executionMode is "start">
+    ...
+<cfelse> <!--- thisTag.executionMode is "end" --->
+    ...
+</cfif>
+If the custom tag is a simple one, i.e., it doesn't process a tag body, then the cfelse section should be empty (and cfelse can be omitted). Do not put spurious complaints in the cfelse section about being called twice! 
+
+Do not hardcode a result variable in a custom tag, e.g., caller.result. Instead, use a resultVariable attribute and return results by setting the specified variable, i.e., caller[attributes.resultVariable]. This is more flexible and also reduces coupling between a custom tag and its calling page. 
+
+Database Conventions
+This section provides guidelines on database table structure and naming.
+
+General Database Naming Issues
+Table names should be singular (e.g., CUSTOMER_ADDRESS, ORDER_LINE_ITEM). 
+Table names may be repeated (as prefixes) in column names only if doing so makes the column names more readable, e.g., CUSTOMER_ADDRESS_ID, ORDER_LINE_ITEM_ID, but in general should be avoided. 
+Column names should be singular and descriptive (e.g., CUSTOMER_FIRST_NAME, PRODUCT_DESCRIPTION). 
+Abbreviations should be avoided wherever possible (with the exception of the primary key abbreviation discussed in 7). 
+Primary key column names should either be the table name followed by _ID or simply ID (or OID for "object ID") and should be the first column of a given table (e.g., CUSTOMER_ID, ORDER_ID). The corresponding constraint name should be the table name followed by _PK (e.g., CUSTOMER_PK, ORDER_PK). 
+Foreign key column names should match their referenced column names (e.g., foreign customer key in ADDRESS table should be called CUSTOMER_ID, i.e., ADDRESS.CUSTOMER_ID identifies CUSTOMER.CUSTOMER_ID, CUSTOMER.ID or CUSTOMER.OID). The corresponding constraint names should be the table name followed by _FKn where n = 0..9 (e.g., ADDRESS_FK1, ADDRESS_FK2) 
+Surrogate keys should be used only when there is some added benefit. In other words, many to many join tables do not need primary keys unless some value is added. 
+Related columns should be grouped together (e.g., [FIRST_NAME, MIDDLE_NAME, LAST_NAME] - [PHONE_NUMBER, FAX_NUMBER, PAGER_NUMBER]). 
+In general, all tables should contain DATE_CREATED and DATE_LAST_UPDATED columns. 
+
+Globalization
+
+If your source file is UTF-8 (which it should be - DWMX lets you create UTF-8 source files!), then you should include a page processing directive near the top of each and every source file:
+
+<cfprocessingdirective pageEncoding="utf-8" />
+All generated HTML must specify a Content-Type, a Content-Language and a character set encoding (which should be UTF-8). See also Accessibility / Section 508 Guidelines.
+
+This will be in the Application.cfm file along with setEncoding() calls for form and URL scope:
+
+<!--- Set encoding to UTF-8. --->
+<cfset setEncoding("URL", "UTF-8") />
+<cfset setEncoding("Form", "UTF-8") />
+
+<!--- Set the output encoding to UTF-8 ---><cfcontent type="text/html; charset=UTF-8" />
+
+<!--- Set basic URL values into request scope --->
+<cf_getrequestsettings />
+<cfheader name="Content-Language" value="#request.language#" />
+Any references to URL encoded data needs to use:
+
+#URLEncodedFormat(myvar, "UTF-8")#
+Note: the locale will be determined dynamically by code in Application.cfm from a combination of the URL (which will usually include a Macromedia 'region' code) and the query string (which may specify a loc parameter). The general outline of that logic, in pseudo-code would be:
+
+if loc is present in query string then
+    request.locale = loc value
+else if region is present in the URL then
+    request.locale = default locale for that region
+else
+    request.locale = "en_US"
+endif
+The language can be derived from the locale mechanically:
+
+<cfset request.language = replace(request.locale,"_","-") />
+A 'short locale' would also be needed for content queries - the first two letters of the specified or deduced locale:
+
+<cfset request.loc2 = left(request.locale, 2) />
+
+Here are some examples of the deduction we would do:
+
+URL 				loc 	Region 			request 
+							locale 	loc2 	language 
+/products/index.cfm 		n/a 	n/a 		en_US 	en 	en-US 
+/products/index.cfm?loc=es 		es 	n/a 		es_ES	es	es-ES 
+/products/index.cfm?loc=es_	US 	es_US 	n/a 		es_US	es 	es-US 
+/la/products/index.cfm 		n/a 	la 		es_ES 	es 	es-ES 
+/la/products/index.cfm?loc=pt_BR 	pt_BR 	la 		pt_BR 	pt 	pt-BR 
+
+
+Performance Techniques
+Do not optimize unless you know you have a performance problem! In general, readability is more important than performance.
+
+The biggest performance optimizations come from architectural and algorithmic changes, e.g., caching. Poorly written database queries can kill a server - use a query analyzer to sanity check your SQL and take advantage of cfquery's caching functionality where appropriate.
+
+Performance under load is often very different to 'straight-line' performance - a change that makes a loop run twice as fast when you're testing a single request may not have the same effect when a hundred users are hitting your site. Use load testing tools to identify bottlenecks and then think carefully about how to restructure the code to improve performance under load.
+
+Having said all that, here are some code-level "do's" and "don'ts". These techniques are usually version-specific and most of these have been verified on CFMX. For the most part they are only important for very performance-sensitive code such as frequently called tags.
+
+Performance "Do's"
+The following are 'positive' recommendations, e.g., "Do xyz..." or "Do xyz instead of...". 
+
+Use compareNoCase() for comparing two values
+Use compareNoCase() or compare() instead of the is not operator to compare two items. They are significantly faster. Remember that these functions return 0 if the values match, so they correspond to is not.
+
+Example: <cfif compareNoCase(x, "a")>
+Not: <cfif x is not "a">
+
+Note: This has been verified for CFMX.
+
+Use listFindNoCase() for OR comparisons
+Use listFindNoCase() or listFind() instead of the is and or operators to compare one item to multiple items. They are much much faster (order of magnitude for 5+ options).
+
+Example: <cfif listFindNoCase("a,b,c", x)
+Not: <cfif x is "a" or x is "b" or x is "c">
+
+Note: This has been verified for CFMX.
+
+Use arrays instead of lists - in general
+In CFMX, lists suffer from the generally slow string processing in Java which means that list manipulation can be slower than in CF5. In general, it is better to work with arrays of items instead of lists of items: listGetAt() is not an efficient way to work with individual items in a data set! However, see the list vs array caveat in the Don't section below.
+
+Note: This has been verified for CFMX.
+
+Use cfqueryparam to increase query performance
+You can use cfqueryparam to optimize a query that looks something like this:
+
+SELECT
+    *
+FROM
+    TABLE_NAME
+WHERE
+    COLUMN = #variable#
+If this query is executed repeatedly with different values for variable then using a SQL 'bind' variable will be faster. cfqueryparam creates these 'bind' variables:
+
+SELECT
+    *
+FROM
+    TABLE_NAME
+WHERE
+    COLUMN = <cfqueryparam cfslqtype="cf_sql_xxx" value="#variable#">
+This allows the optimizer to compile the query once and reuse it every time the query is executed. It is also more secure since it prevents rogue SQL from being passed into a query (because it validates the type of the data).
+
+Note: This has been verified for CFMX.
+
+Use blockFactor to increase query performance
+Adding blockFactor to a query can significantly improve performance. To add blockFactor, examine the data that is being returned. Determine the maximum size (in bytes) of each row. Take that size and determine how many times that number would divide into 32k. That number is your blockFactor, but be aware that the max blockFactor is 100. So, if for example you were getting 200 bytes per row, you could easily fit over 100 rows into the 32k buffer that CF 'grabs' at one time.
+
+If you know at runtime that you will have less then 100 rows returned, for example you're writing a query that either returns 0 or 1 rows, do not bother adding the blockFactor attribute.
+
+Note: This has been verified for CFMX.
+
+Performance "Don'ts"
+The following are 'negative' recommendations, e.g., "Don't do xyz...".
+
+Don't use evaluate()
+Avoid evaluate() unless there is no other way to write your code!
+
+Don't use iif()
+Always use cfif/cfelse instead of iif(). It is significantly faster and more readable.
+
+Don't use structFind()
+Always use struct.key or struct[key] instead of structFind(struct, key). They are significantly faster and more readable.
+
+Don't slavishly convert lists to arrays
+Even though manipulating an array is generally faster than manipulating a list in CFMX, if you simply need to iterate over a list of items and process each one in turn the faster construct is <cfloop list="#itemList#" index="x"> ... </cfloop>. Don't convert itemList to an array and then loop over that - it's not worth it because it probably won't be faster.
+
+Don't use cfmodule
+It's slower than a CFC method invocation, it's slower and uglier than using a custom tag with a prefix, it's even slightly slower than a regular custom tag invocation. Better options exist: use a CFC (preferred), use cfimport and invoke a custom tag (always preferable to invoking a custom tag via cfmodule) or even simply including a file.
+
+Don't use incrementValue()
+Always use x = x + 1 instead of x = incrementValue(x). It is more readable and slightly faster.
+
+Note: In situations where x + 1 is not legal, incrementValue(x) will be more readable than creating a temporary variable to hold x + 1 and then using the temporary variable.
+
+Don't use WDDX for hardcoded data
+It is always faster to cfinclude a CFML file that defines a datastructure than it is to deserialize a WDDX packet of that datastructure somewhat faster if the packet is in memory, and significantly faster if the WDDX packet is read with cffile. Use this technique if the datastructure can be hardcoded (i.e., don't ship .wddx files, ship .cfm files). The Site-wide Variables technique is a good example of this.
+
+Note: Complex or frequently changing configuration data is best implemented using an appropriately designed XML file.

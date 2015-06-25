@@ -1,0 +1,7 @@
+DECLARE
+c_Cursor1 SYS_REFCURSOR;
+c_Cursor2 SYS_REFCURSOR;
+v_argIN VARCHAR2(50) DEFAULT 'TABLE';
+BEGIN
+    PACK_DATADICTIONARY.sp_getSelectedObjList(v_argIN, c_Cursor1, c_Cursor2);
+END;

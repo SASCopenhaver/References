@@ -1,0 +1,92 @@
+09-18-2006
+_Controller.cfm
+inc_AlumniRecord_p1.cfm
+_ControlerDB.cfm
+
+===
+PACK_ALUMNI_ARCHIVE
+
+
+
+=========================================================================================================
+/*
+	vRtnVal =	argAlnmID/*job_almn_id*/+","+
+			 	eval("txt_job_num_"+argCtrlID+".value")+","+/*job_num*/
+				"0"+","+/*job_pgm_id*/
+				"'"+eval("txt_job_title_txt_"+argCtrlID+".value")+"'"+","+/*job_title_txt*/
+				vJob_Crnt_Ind+","+/*job_crnt_ind*/
+				"'"+eval("txt_job_instn_nm_"+argCtrlID+".value")+"'"+","+/*job_instn_nm*/
+				"sysdate"+","+/*job_crtd_dt*/
+   				"<cfoutput>#client.Usr_CD#</cfoutput>"+","+/*job_crtd_id*/
+				"sysdate"+","+/*job_updt_dt*/
+				"<cfoutput>#client.Usr_CD#</cfoutput>"+","+/*job_updt_id*/
+				"0"+","+/*original_almn_id*/
+				"'Merged'";/*pgm_src_nm*/
+	
+	*/
+
+
+ --/////////////////////////////////////////////////////////////////////
+       -- II. Loop to insert records into JOB
+       -- II.1:
+       
+       v_sysdate := SYSDATE;    
+       select REPLACE(arg_MergeJobRecds, 'sysdate', 'TO_DATE('''||TO_CHAR(SYSDATE, 'DD/MM/YYYY')||''',''DD/MM/YYYY'')'  ) into vMergeJobRecds from dual;
+       insert into test values (vMergeJobRecds);    
+      
+       -- II.2:
+       FOR i IN 1 .. arg_LoopNum LOOP
+           
+           -- II.2.1:
+           select Instr(vMergeJobRecds, ';', 1, 1)
+           into vPosOfDelimiter
+           from dual;
+           
+           -- II.2.2:
+           select Substr( vMergeJobRecds, 1, (vPosOfDelimiter-1) )
+           into vExecStr
+           from dual;
+           
+           --DBMS_OUTPUT.put_line (vExecStr);
+          --DBMS_OUTPUT.put_line (To_Char(vPosOfDelimiter));
+           -- II.2.3
+          -- vExecStr := vExecStr || ';';           
+           insert into test values (vExecStr); 
+           commit;
+          
+           EXECUTE IMMEDIATE vExecStr;
+                
+           commit;
+                      
+           -- II.2.4:
+           select Substr( vMergeJobRecds, (vPosOfDelimiter+1) )
+           into vMergeJobRecds
+           from dual;
+           
+       END LOOP;
+       
+      --/////////////////////////////////////////////////////////////////////
+
+JOB1
+PGM1
+ALMN1
+PLACE_VISIT1
+
+
+1. sp_saveOrgRecords replaced tbl JOB1 with JOB; line 3857
+
+2. Create tbl ERROR_MSG
+
+3. File inc_ListJobRecords_p1.cfm, Line 193 replace tbl JOB1 with JOB;
+
+4. File inc_ListPrograms_p1.cfm Line 830: remove vValidationPassed = "NO";
+
+5.  sp_mergePgm_and_PV replace tbl PLACE_VISIT1 with PLACE_VISIT,
+				    PGM1 with PGM,
+				    ALMN1 with ALMN
+6. sp_getListOfPrograms replace tbl PGM1 with PGM,  PLACE_VISIT1 with PLACE_VISIT
+
+7.Changes were applied into inc_popupSaveSearchName_p1.cfm and _p2.cfm
+					
+8. Column was added to tbl ALMN_MERGED.
+9. Handle  -1 for the field almn_cntct_ind

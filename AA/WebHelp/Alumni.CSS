@@ -1,0 +1,330 @@
+/*     Alumni Archive style sheet     */
+
+Body {background-color: #FDFDFF;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 10pt; color: #000033;}
+
+	
+/*    HEADINGS    */
+	
+H1 {color: #FFFFFF; 
+	border-bottom: none #000066 1px;
+	font-weight:bold; 
+	font-size:13pt;
+	font-family: 'Arial Rounded MT Bold', Arial, Verdana, sans-serif; 
+   margin: 0px 0px 10px 0px; 
+	padding: 10px; 
+	text-align:left; 
+	white-space:nowrap; 
+	background-color:#941021;}
+	 
+H1.home {color: #FFFFFF; 
+	font-size:20pt; 
+	border: none;
+	font-family: Arial, Verdana, sans-serif; 
+	font-weight: bold;
+	margin: 0px; 
+	padding: 0px; 
+	text-align:center;
+	white-space:nowrap; 
+	background-color:transparent;}
+
+H1.page {color: #941021; 
+	border-bottom: solid #000066 1px;
+	font-weight:bold; 
+	font-size: 12pt; 
+	font-family: 'Arial Rounded MT Bold', Arial, Verdana, sans-serif;
+	margin: 0px 0px 10px 0px; 
+	padding: 0px; 
+	text-align:left;
+	white-space:nowrap;
+	background-color:transparent;}
+	 
+H2 {font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color: #0000AA;
+	background-color: #EEEEFF; 
+	font-size: 12pt; 
+	font-weight: bold; 
+	margin: 24px 0px 18px 0px;}
+	
+H3 {font-family:  Arial, Verdana, Geneva, Helvetica, sans-serif;
+	color: #990000;
+	background-color: #EEEEEE; 
+	font-size: 11pt; 
+	font-weight: bold; 
+	margin: 50px 0px 20px 0px;}
+	
+H4 {font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color: #006666; 
+	background-color: #EEEEF3;
+	font-size: 10pt; 
+	font-weight: bold;}
+	
+	
+	
+/*   Links    */
+
+A:link {font-weight:bold;  
+	white-space: nowrap;}
+
+A.popup {color:#006600; 
+	cursor:hand; 
+	border: none;
+	font-weight:bold; 
+	white-space:nowrap;}
+			
+A:visited {color:#0000CC; 
+	font-weight:bold;
+	white-space:nowrap;}
+
+A:visited.popup {font-weight:bold; 
+	color:#006600; 
+	white-space:nowrap;}
+	
+A:focus {border-width:2px 0px 2px 0px; 
+	border-style:solid;
+	font-weight:bold; 
+	white-space:nowrap;}
+		 
+A:hover {border-width:1px 0px 1px 0px; 
+	border-color: #CC0000;
+	border-style:solid; 
+	font-weight:bold;
+	white-space:nowrap; 
+	background-color: #FFEEEE;}
+
+A:hover.popup {border-width:1px 0px 1px 0px; 
+	border-color: #CC0000;
+	border-style:solid; 
+	font-weight:bold;
+	white-space:nowrap; 
+	background-color: #FFEEEE;}
+
+A:active {color:#CC0000; 
+	border:none; 
+	white-space:nowrap;
+	font-weight:bold;}
+		  
+A:active.popup {background:transparent; 
+	font-weight:bold;
+	color:#006600; 
+	border: none; 
+	white-space:nowrap;}
+
+
+
+
+
+IMG {border-color: transparent; 
+	border-style: none; 
+	border-width: 0px; 
+	margin: 6px;}
+	 
+IMG.button {vertical-align: middle; 
+	margin: 1px 0px 1px 0px;
+	clear: none;}
+	
+	
+
+LI {font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 10pt; 
+	color: #000033; 
+	margin: 4px 0px 6px 0px;}
+
+LI.none {font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 10pt; 
+	color: #000033; 
+	margin: 4px 0px 6px 0px;
+	list-style: none;}		
+				 
+LI P.pointer {list-style:url("red_arrow.gif"); border:none;}
+			  	
+LI.star {font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 10pt; 
+	color: #000033; 
+	margin: 4px 0px 6px 0px;}
+	
+P {font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 10pt; 
+	color: #000033; 
+	margin: 4px 0px 6px 0px;}
+
+P.return {text-align: center; 
+	font-size: 7pt; 
+	clear: right;}
+
+	
+
+.h3indent {margin-left: 20px;}
+
+.h4indent {margin-left: 40px;}
+
+.note {background-color:#FFFFDD; 
+	border:1px solid #660000; 
+   padding:6px;}
+	
+.notegrey {background-color: #EEEEEE;
+	padding: 6px;}
+		
+SPAN.emphasis {font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-weight: bold; 
+	font-size: 10pt; 
+	color: #AA0000;}
+		
+SPAN.name {font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-weight: bold; 
+	font-size: 10pt;}
+	
+Span.blue {font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	color: #005AAD;}
+	
+SPAN.blueWhite1 {font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-weight: bold; 
+	background-color: #005AAD;
+	color: #ffffff;
+	padding: 0px 10px 1px 10px;
+	font-size: 9pt;}
+
+SPAN.blueWhite2 {font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-weight: bold; 
+	background-color: #005AAD;
+	color: #ffffff;
+	padding: 0px 4px 1px 4px;
+	font-size: 9pt;}
+	
+Span.greyBlue {font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color: #005AA5;
+	background-color: #CECECE;
+	padding: 0px 3px 0px 3px;
+	font-weight: 700;}
+	
+SPAN.green {font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color: #5E955E; 
+	font-weight: bold;}
+
+SPAN.greenBlue {font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	color: #005AA5;
+	background-color: D6DEC6;
+	padding: 0px 6px 1px 6px;
+	text-decoration: underline;}
+	
+SPAN.red {font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color: #F54952; 
+	font-weight: bold;}
+
+/*    Page Help     */
+
+
+Body.page {background-color: #FDFDFF;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 10pt; 
+	color: #000033;
+	margin:8px;}
+	
+Body.page P A:link {text-decoration: underline;}
+
+H1.page {color: #941021; 
+	border-bottom: solid #000066 1px;
+	font-weight:bold; 
+	font-size: 12pt;  
+	font-weight: bold;
+   font-family: 'Arial Rounded MT Bold', Arial, Verdana, sans-serif; 
+   margin: 0px 0px 10px 0px; 
+	padding: 0px; 
+	text-align:left; 
+   white-space:nowrap; 
+	background-color:transparent;}
+
+H2.page {font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color: #0000AA;
+	background-color: #EEEEFF; 
+	font-size: 12pt; 
+	font-weight: bold; 
+	margin: 24px 0px 18px 0px;}
+	
+H3.page {font-family:  Arial, Verdana, Geneva, Helvetica, sans-serif;
+	color: #990000;
+	background-color: #EEEEEE; 
+	font-size: 11pt; 
+	font-weight: bold; 
+	margin: 50px 0px 20px 0px;}
+	
+H4.page {font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color: #006666; 
+	background-color: #EEEEF3;
+	font-size: 10pt; 
+	font-weight: bold;}
+
+LI.page {font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 10pt; color: #000033; margin: 4px 0px 12px 0px;}
+
+P.page {font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 10pt; 
+	color: #000033; 
+	margin: 4px 0px 12px 0px;}
+
+P.note {font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 10pt; 
+	color: #000033; 
+	margin: 4px 0px 12px 0px; 
+	background-color:#FFFFDD; 
+	border: 1px solid #660000; 
+   padding:6px;}
+
+P.return {font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color: #000033; margin: 4px 0px 6px 0px; text-align: center; 
+	font-size: 7pt; clear: right;}
+
+SPAN.emphasis {font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-weight: bold; 
+	font-size: 10pt; 
+	color: #AA0000;}
+
+SPAN.name {font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-weight: bold; 
+	font-size: 10pt;} 
+	
+Span.blue {font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	color: #005AAD;}
+	
+SPAN.blueWhite1 {font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-weight: bold; 
+	background-color: #005AAD;
+	color: #ffffff;
+	padding: 0px 10px 1px 10px;
+	font-size: 9pt;}
+
+SPAN.blueWhite2 {font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-weight: bold; 
+	background-color: #005AAD;
+	color: #ffffff;
+	padding: 0px 4px 1px 4px;
+	font-size: 9pt;}
+	
+Span.greyBlue {font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color: #005AA5;
+	background-color: #CECECE;
+	padding: 0px 3px 0px 3px;
+	font-weight: 700;}
+	
+SPAN.green {font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color: #5E955E; 
+	font-weight: bold;}
+
+SPAN.greenBlue {font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	color: #005AA5;
+	background-color: D6DEC6;
+	padding: 0px 6px 1px 6px;
+	text-decoration: underline;}
+	
+SPAN.red {font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color: #F54952; 
+	font-weight: bold;}
+	
+.h3indent {margin-left: 20px;}
+
+.h4indent {margin-left: 40px;}

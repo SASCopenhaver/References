@@ -1,0 +1,37 @@
+GRANT select on USIA.organization        TO chklist;
+GRANT select on USIA.org_org_role        TO chklist;
+--------------------------------------------------------------------------------
+GRANT select on USIA.per_org_role        TO chklist;
+GRANT select on USIA.person 	         TO chklist;
+GRANT select on USIA.person_email 		 TO chklist;
+GRANT select on USIA.person_organization TO chklist;
+--------------------------------------------------------------------------------
+GRANT select on USIA.project 			 TO chklist;
+GRANT select, insert, update on USIA.project_program_agency  TO chklist;
+GRANT select, insert, update on USIA.project_program_officer TO chklist;
+GRANT select, insert, update on USIA.project_goal            TO chklist;
+--------------------------------------------------------------------------------
+GRANT select on USIA.security_user 		 TO chklist;
+GRANT select on USIA.strategic_goal 	 TO chklist;
+--------------------------------------------------------------------------------
+GRANT select on USIA.usia_organization 	 TO chklist;
+--------------------------------------------------------------------------------
+GRANT select on NPA.project 			 TO chklist;
+
+--******************************************************************************
+/*
+NEEDED dATABASE changes:
+Table:	SECURITY_USER 
+		1. update usia.security_user su
+   			set su.su_office_id = 1017
+ 			where su.su_person_id = 762185;
+		
+		2. update usia.security_user su
+		    set su.su_role = 'BC'
+			where su.su_person_id = 1405
+				
+		3. update usia.security_user su
+		    set su.su_role = 'SA'
+			where su.su_person_id = 777244 -- cmoore
+
+*/

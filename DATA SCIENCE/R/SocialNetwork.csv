@@ -1,0 +1,11 @@
+ID,Gender,Age,Site,Times
+1,male,10,None,1
+2,female,20,facebook,100
+3,male,30,None,
+4,male,40,facebook,40
+5,female,50,facebook,
+6,female,,None,
+7,male,70,facebook,25
+8,female,80,MySpace,20
+9,female,20,MySpace,80
+10,female,30,None,0

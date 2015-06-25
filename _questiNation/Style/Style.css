@@ -1,0 +1,131 @@
+
+BODY {/*used*/
+	background-image:      url(./Img/Image6.jpg);
+}
+.ArialBlackBold10 {/*used*/
+	font-Family     :      Arial, Helvetica, sans-serif;
+	font-Style      :      normal;
+	font-Weight     :      bold;
+	font-size       :      10pt;
+	text-Align      :      left;
+	vertical-align  :      top;
+	color			:	   Black;	
+}
+.ArialBlackBold10_R {/*used*/
+	font-Family     :      Arial, Helvetica, sans-serif;
+	font-Style      :      normal;
+	font-Weight     :      bold;
+	font-size       :      10pt;
+	text-Align      :      right;
+	vertical-align  :      top;
+	color			:	   Black;	
+}
+.ArialWhiteBold10 {/*used*/
+	font-Family     :      Arial, Helvetica, sans-serif;
+	font-Style      :      normal;
+	font-Weight     :      bold;
+	font-size       :      10pt;
+	text-Align      :      left;
+	vertical-align  :      top;
+	color			:	   White;	
+}
+.ArialBlackBold8 {/*used*/
+	font-Family     :      Arial, Helvetica, sans-serif;
+	font-Style      :      normal;
+	font-Weight     :      bold;
+	font-size       :      8pt;
+	text-Align      :      left;
+	vertical-align  :      top;
+	color			:	   Black;	
+}
+.CourierBlack10 {
+	text-align		:	   left;
+	font-Family     :      Courier, Arial, Helvetica, sans-serif;
+	font-Size       :      10pt;
+	font-Style      :      normal;
+	font-Weight     :      normal;
+	color			:	   Black;	
+}
+.copyrightTxt6 {
+	text-align		:	   center;
+	font-Family     :      Arial, Helvetica, sans-serif;
+	font-Size       :      8pt;
+	font-Style      :      normal;
+	font-Weight     :      normal;
+	color			:	   black;	
+}
+.ModuleName		{
+	font-Family     :      Arial, Helvetica, sans-serif;
+	font-Style      :      normal;
+	font-Weight     :      bold;
+	font-size       :      13pt;
+	text-Align      :      center;
+	vertical-align  :      top;
+	color			:	   #97AFC8;
+}
+.todayDate		{
+	font-Family     :      Arial, Helvetica, sans-serif;
+	font-Style      :      normal;
+	font-Weight     :      bold;
+	font-size       :      10pt;
+	text-Align      :      center;
+	vertical-align  :      top;
+	color			:	   #97AFC8;
+}
+
+/*
+.textInHeader10		{
+	font-Family     :      Courier, Arial, Helvetica, sans-serif;
+	font-Style      :      normal;
+	font-Weight     :      bold;
+	font-size       :      10pt;
+	text-Align      :      center;
+	vertical-align  :      top;
+	color			:	   white;	
+}
+.questions10		{
+	font-Family     :      Courier, Arial, Helvetica, sans-serif;
+	font-Style      :      normal;
+	font-Weight     :      normal;
+	font-size       :      8pt;
+	text-Align      :      left;
+	vertical-align  :      top;
+	color			:	   black;	
+}
+.question10		{
+	font-Family     :      Arial, Helvetica, sans-serif;
+	font-Style      :      normal;
+	font-Weight     :      normal;
+	font-size       :      10pt;
+	text-Align      :      left;
+	vertical-align  :      top;
+	color			:	   Navy;	
+}
+.textMenuDescr8		{
+	font-Family     :      Courier, Arial, Helvetica, sans-serif;
+	font-Style      :      normal;
+	font-Weight     :      bold;
+	font-size       :      8pt;
+	text-Align      :      left;
+	vertical-align  :      top;
+	color			:	   White
+}
+
+.textcontrolleft9	{
+	font-Family     :      Arial, Helvetica, sans-serif;
+	font-Style      :      normal;
+	font-Weight     :      normal;
+	font-size       :      9pt;
+	text-Align      :      left;	
+	vertical-align  :      center;	
+	border			: 	   none;
+}
+.textError12 {
+	text-align		:	   left;
+	font-Family     :      Arial;
+	font-Size       :      12pt;
+	font-Style      :      normal;
+	font-Weight     :      normal;
+	color			:	   #ED2024;	
+}
+*/
