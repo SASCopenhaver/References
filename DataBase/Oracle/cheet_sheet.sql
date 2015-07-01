@@ -13,12 +13,11 @@ SELECT e.EMPLOYEE_ID, e.First_name||' '||e.LAST_NAME AS "FULL NAME",
  WHERE e.DEPARTMENT_ID = d.DEPARTMENT_ID(+);
 ----------------------------------------------
 -- MGR with EMPs
-SELECT m.ename, e.ename
-  FROM emp m, emp e
- WHERE m.empno = e.mgr
-   --AND e.empno != e.mgr
-   AND e.mgr is not NULL
-ORDER BY 1;
+SELECT m.EMPLOYEE_ID, m.First_name||' '||m.LAST_NAME AS "FULL NAME",
+       e.MANAGER_ID, e.EMPLOYEE_ID, e.First_name||' '||e.LAST_NAME AS "FULL NAME"
+  FROM EMPLOYEES m, EMPLOYEES e
+ WHERE m.EMPLOYEE_ID = e.MANAGER_ID
+ ORDER BY m.LAST_NAME;
 ----------------------------------------------
 -- DEPT + SAL with Count(emp)>5
 SELECT e.DEPTNO, d.dname, SUM(e.sal)
