@@ -1,6 +1,17 @@
 select * from emp order by sal desc;
 select * from dept;
 ----------------------------------------------
+-- Q15:  All employees, all departments
+SELECT e.EMPLOYEE_ID, e.First_name||' '||e.LAST_NAME AS "FULL NAME",
+       d.DEPARTMENT_ID, d.DEPARTMENT_NAME
+  FROM EMPLOYEES e, DEPARTMENTS d
+ WHERE e.DEPARTMENT_ID(+) = d.DEPARTMENT_ID
+UNION 
+SELECT e.EMPLOYEE_ID, e.First_name||' '||e.LAST_NAME AS "FULL NAME",
+       d.DEPARTMENT_ID, d.DEPARTMENT_NAME
+  FROM EMPLOYEES e, DEPARTMENTS d
+ WHERE e.DEPARTMENT_ID = d.DEPARTMENT_ID(+);
+----------------------------------------------
 -- MGR with EMPs
 SELECT m.ename, e.ename
   FROM emp m, emp e
